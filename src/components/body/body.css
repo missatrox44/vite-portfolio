@@ -1,0 +1,10 @@
+.centerPage {
+  margin: auto; 
+  display: block;
+}
+
+img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
