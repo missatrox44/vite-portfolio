@@ -14,7 +14,7 @@ export default function Footer(){
   return (
     <footer class='bg-lightDesert'>
    <div class='sm:flex sm:items-center sm:justify-center py-1 px-1 m-2.0'>
-        <span class='text-sm text-darkDesert sm:text-center'>© 2022 <a target='_blank' href='https://github.com/missatrox44' class='hover:text-desertGold hover:font-bold'>sarabaqla.dev™</a> 
+        <span class='text-sm text-darkDesert sm:text-center'>© 2022 <a target='_blank' href='https://github.com/missatrox44' class='hover:text-desertGold hover:font-bold'>sarabaqla.dev</a> 
         </span>
         <div class='flex mt-4 space-x-6 sm:justify-center sm:mt-0'>
             <a target='_blank' href='https://github.com/missatrox44' class='text-darkDesert hover:text-desertGold'>
