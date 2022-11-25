@@ -1,14 +1,5 @@
 import React from 'react';
 import './footer.css';
-// import styled from 'styled-components';
-
-// const theFooter = styled.div`
-// position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   text-align: center;
-// `
 
 export default function Footer(){
   return (
