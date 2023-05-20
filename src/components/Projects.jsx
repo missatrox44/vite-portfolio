@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   
   return (
-    <div className="relative group">
+    <div className="relative group ">
       <img
         src={project.thumbnail}
         alt={project.title}

@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Interests from "./components/Interests";
+import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
 import "./index.css";
@@ -22,6 +23,7 @@ function App() {
       <Experience />
       <Education />
       <Interests />
+      <ContactMe/>
       <Footer />
     </>
   );
