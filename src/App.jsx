@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import NavBar from './components/navBar/NavBar';
-import Footer from './components/footer/Footer';
-import Body from './components/body/Body';
+
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Body from './components/Body';
 import 'reset-css';
 import './index.css';
 
