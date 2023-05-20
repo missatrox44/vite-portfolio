@@ -1,8 +1,9 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-darkDesert">
@@ -19,11 +20,11 @@ export default function NavBar() {
           </a>
           <div className="flex items-center lg:order-2">
             <button
-              data-collapse-toggle="mobile-menu-2"
+              onClick={() => setIsOpen(!isOpen)}
               type="button"
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
-              aria-expanded="false"
+              aria-expanded={isOpen}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -53,13 +54,16 @@ export default function NavBar() {
             </button>
           </div>
           <div
-            className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            className={`${
+              isOpen ? "block" : "hidden"
+            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <HashLink
                   to="#home"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >
@@ -69,6 +73,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#about"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   About
@@ -77,6 +82,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#skills"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Skills
@@ -85,6 +91,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#projects"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Projects
@@ -93,6 +100,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#experience"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Experience
@@ -101,6 +109,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#education"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Education
@@ -109,6 +118,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#interests"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Interests
@@ -117,6 +127,7 @@ export default function NavBar() {
               <li>
                 <HashLink
                   to="#contact-me"
+                  onClick={() => setIsOpen(false)}
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact Me
