@@ -19,7 +19,7 @@ export default function Footer() {
           <a
             target="_blank"
             href="https://github.com/missatrox44"
-            className="text-darkDesert hover:text-desertGold"
+            className="text-darkDesert hover:text-goldDesert transition-colors duration-300"
           >
             <FaGithub className="w-5 h-5" />
             <span className="sr-only">GitHub account</span>
@@ -27,7 +27,7 @@ export default function Footer() {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/sara-baqla/"
-            className="text-darkDesert hover:text-desertGold"
+            className="text-darkDesert hover:text-goldDesert transition-colors duration-300"
           >
             <FaLinkedin className="w-5 h-5" />
             <span className="sr-only">LinkedIn account</span>
