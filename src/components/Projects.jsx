@@ -53,7 +53,7 @@ const ProjectCard = ({ project }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
-    <div className="relative group ">
+    <div className="relative group">
       <img
         src={project.thumbnail}
         alt={project.title}
@@ -108,7 +108,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      className="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-lightDesert"
     >
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />

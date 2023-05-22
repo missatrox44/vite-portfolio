@@ -30,8 +30,8 @@ const Experience = () => {
   ];
 
   return (
-    <div id="education" className="bg-lightDesert p-8 rounded-lg shadow-md w-full max-w-md mx-auto">
-      <h2 className="text-4xl font-bold text-darkDesert mb-4">Education</h2>
+    <div id="education" className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto">
+      <h2 className="text-4xl font-bold text-darkDesert mb-4">Experience</h2>
       <div className="resume-section-content grid grid-cols-1 sm:grid-cols-2 gap-4">
         {jobExperiences.map((experience, index) => (
           <div key={index} className="bg-lightDesert p-6 border border-darkDesert rounded-lg transition-transform hover:scale-105">
