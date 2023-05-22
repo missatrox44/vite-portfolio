@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaCheck, FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaNpm } from 'react-icons/fa';
 
-const Skills = () => {
+export default function Skills () {
   return (
-    <div id="skills" className="bg-lightDesert p-8 rounded-lg shadow-md w-full max-w-md mx-auto">
+    <div id="skills" className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto">
       <div className="resume-section-content">
         <h2 className="text-4xl font-bold text-darkDesert mb-4">Skills</h2>
         <div className="subheading text-darkDesert mb-3 font-bold">Programming Languages & Tools</div>
@@ -36,4 +36,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+

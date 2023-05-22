@@ -12,18 +12,37 @@ export default function About() {
         />
         <h1 className="text-4xl font-bold text-darkDesert mb-4">Sara Baqla</h1>
         <p className="text-lg text-darkDesert mb-4 text-center">
-          I am a full-stack web developer leveraging a science and education
-          background. My goal is to create user friendly applications that have
-          high impact. My science background allows me to have an objective
-          approach to problem solving. I earned a certificate in Full Stack Web
-          Development from a boot camp hosted by UT Austin. I am a highly
-          adaptable individual who pays great attention to detail. I may not
-          know all the answers but am resourceful and can produce quality work.
-          I am looking forward to adding my skills to an innovative team with
-          the goal of creating maintainable applications for the web.
+        As a full-stack web developer with a foundation in science and education, I strive to engineer user-friendly applications with substantial impact. My scientific background instills in me a systematic, objective approach to problem-solving, a skill set honed during my Full Stack Web Development certification program at UT Austin's renowned boot camp. While I may not have all the answers readily available, my resourcefulness and meticulous attention to detail ensure the delivery of high-quality work. I'm eager to bring my adaptability and skill set to an inventive team, working together to craft sustainable web applications.
+        </p>
+        <p className="text-lg text-darkDesert mb-4 text-center">
+        However, my passion extends beyond coding into the realm of music. For the past 20 years, I've been a dedicated trumpet player, still experiencing a thrill every time I step onto the stage. I find inspiration in classic maestros like Miles Davis, Dizzy Gillespie, Freddie Hubbard, Lee Morgan, and Clifford Brown, while my contemporary influences are too numerous to recount here. I have also volunteered as a private tutor, mentoring budding and intermediate trumpet enthusiasts.
+        </p>
+        <p className="text-lg text-darkDesert mb-4 text-center">
+        When I take a break from the melodies and coding, I am an ardent lover of the outdoors and literature. From suspending upside-down from a tree to losing myself in a good book, I strive to make the most of my leisure time. Some of my most cherished adventures include visits to the awe-inspiring {" "}
+          <a
+            className="hover:text-goldDesert transition-colors duration-300"
+            href="https://www.fs.usda.gov/recarea/stnf/recarea/?recid=6521"
+          >
+            Trinity Alps Wilderness
+          </a>
+          ,{" "}
+          <a
+            className="hover:text-goldDesert transition-colors duration-300"
+            href="https://www.nps.gov/romo/index.htm"
+          >
+            Rocky Mountain National Park
+          </a>
+          , and{" "}
+          <a
+            className="hover:text-goldDesert transition-colors duration-300"
+            href="https://www.nps.gov/arch/index.htm"
+          >
+            Arches National Park
+          </a>
+          .
         </p>
         <div className="flex justify-center items-center">
-        <a
+          <a
             href="https://github.com/missatrox44"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +58,6 @@ export default function About() {
           >
             <FaLinkedin size={32} />
           </a>
-     
         </div>
       </div>
     </div>
