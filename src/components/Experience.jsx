@@ -86,7 +86,7 @@ const Experience = () => {
             <p className="text-xl text-darkDesert italic mb-4">
               {experience.company}
             </p>
-            <p className="text-darkDesert">{experience.description}</p>
+            <p className="text-darkDesert hidden">{experience.description}</p>
             <p className="text-darkDesert mt-4 font-bold">
               {experience.timePeriod}
             </p>
