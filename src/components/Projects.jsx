@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaTimesCircle } from "react-icons/fa";
 import Modal from "react-modal";
 
 const projects = [
@@ -7,7 +7,7 @@ const projects = [
     title: "Baes",
     description:
       "Baes is a comprehensive application built on the MERN stack, designed with the aim of enhancing personal relationships. It enables users to maintain and manage crucial information about their significant contacts. With Baes, users can set up an account, modify their profiles, forge connections, and record customized notes about their interactions and relationships.",
-    thumbnail: "baes.png",
+    thumbnail: "projects/baes.png",
     github: "https://github.com/missatrox44/baesii",
     deployed: "https://loversnotfighters.herokuapp.com/",
     date: "September 2022",
@@ -16,7 +16,7 @@ const projects = [
     title: "Git Me There",
     description:
       "Git Me There is a user-friendly web application, crafted using HTML, CSS, JavaScript, and leveraging the power of third-party APIs. This application serves as a one-stop solution for planning transportation logistics for upcoming journeys within any U.S. city. By entering their destination, users are provided with walking and biking scores, as well as a list of nearby restaurants. For destinations with a walking score below 50, the application conveniently presents an option to book an Uber ride, ensuring an effortless travel experience.",
-    thumbnail: "git_me_there.png",
+    thumbnail: "projects/git_me_there.png",
     github: "https://missatrox44.github.io/git-me-there",
     deployed: "https://github.com/missatrox44/git-me-there",
     date: "July 2022",
@@ -25,7 +25,7 @@ const projects = [
     title: "Fact or Fiction",
     description:
       "Fact or Fiction is a dynamic full-stack application offering users an engaging gaming experience. The game involves discerning whether given laws or headlines are authentic or fabricated. Developed using Handlebars.js, Express.js, and Sequelize, the project employs Bootstrap for styling, ensuring a sleek and intuitive user interface.",
-    thumbnail: "fact_or_fiction.png",
+    thumbnail: "projects/fact_or_fiction.png",
     github: "https://github.com/missatrox44/Fact-Fiction",
     deployed: "https://factorfiction.herokuapp.com",
     date: "August 2022",
@@ -34,7 +34,7 @@ const projects = [
     title: "OHS Broncho Band",
     description:
       "This project involved a comprehensive refactoring of the Odessa High School Broncho Band's website. It was redesigned to be mobile responsive, while also updating images and links for a more appealing and user-friendly experience. New pages were added, working in close collaboration with the band director to ensure that the final design echoed her vision and faithfully represented the values of the OHS Broncho Band. The website was expertly crafted using tools from WiX and continues to be a work in progress, reflecting the ever-evolving spirit of the band program.",
-    thumbnail: "odessa_band_screenshot.png",
+    thumbnail: "projects/odessa_band_screenshot.png",
     deployed: "https://www.odessaband.org/",
     date: "October 2022",
   },
@@ -42,7 +42,7 @@ const projects = [
     title: "Love Thy Selfie",
     description:
       "Love Thy Selfie is an intuitive, mobile-first React application designed to digitally transform a local photo booth business. Embodying the spirit of 'Love Thy Selfie', this platform offers users a comprehensive overview of the diverse services provided, including vivid picture examples, and authentic customer reviews. It also showcases the geographic service areas to help customers understand their reach. One of the key features is a seamlessly integrated contact form powered by Email.js, enabling customers to easily inquire about booking opportunities. With its user-friendly interface and responsive design, the Love Thy Selfie website effectively brings the unique essence of the photo booth experience online, and at the fingertips of potential customers.",
-    thumbnail: "love_thy_selfie.png",
+    thumbnail: "projects/love_thy_selfie.png",
     github: "https://github.com/missatrox44/love-thy-selfie",
     deployed: "https://love-thy-selfie.vercel.app/",
     date: "May 2022",
@@ -71,9 +71,15 @@ const ProjectCard = ({ project }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
-        className="flex items-center justify-center p-8 bg-white rounded-lg shadow-lg"
-        overlayClassName="fixed inset-0 bg-black opacity-90 flex items-center justify-center"
+        className="relative flex items-center justify-center p-8 bg-white rounded-lg shadow-lg max-w-full mx-2 sm:mx-0 sm:max-w-xl"
+        overlayClassName="fixed inset-0 bg-darkDesert opacity-90 flex items-center justify-center"
       >
+        <button
+          onClick={() => setModalIsOpen(false)}
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+        >
+          <FaTimesCircle size={32} />
+        </button>
         <div className="w-full max-w-xl bg-white p-6 rounded-lg text-black">
           <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
           <p className="mb-4">{project.description}</p>
