@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaTimesCircle } from "react-icons/fa";
 import Modal from "react-modal";
 
 const projects = [
@@ -71,9 +71,15 @@ const ProjectCard = ({ project }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
-        className="flex items-center justify-center p-8 bg-white rounded-lg shadow-lg"
-        overlayClassName="fixed inset-0 bg-black opacity-90 flex items-center justify-center"
+        className="relative flex items-center justify-center p-8 bg-white rounded-lg shadow-lg max-w-full mx-2 sm:mx-0 sm:max-w-xl"
+        overlayClassName="fixed inset-0 bg-darkDesert opacity-90 flex items-center justify-center"
       >
+        <button
+          onClick={() => setModalIsOpen(false)}
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+        >
+          <FaTimesCircle size={32} />
+        </button>
         <div className="w-full max-w-xl bg-white p-6 rounded-lg text-black">
           <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
           <p className="mb-4">{project.description}</p>
