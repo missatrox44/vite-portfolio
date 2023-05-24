@@ -13,7 +13,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-lightDesert">
       <NavBar />
       <Landing />
       <About />

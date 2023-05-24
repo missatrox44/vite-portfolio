@@ -108,11 +108,14 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-lightDesert"
+      className="flex flex-col items-center p-8 bg-lightDesert"
     >
-      {projects.map((project, index) => (
-        <ProjectCard key={index} project={project} />
-      ))}
+      <h2 className="text-4xl font-bold text-darkDesert mb-4">Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
     </div>
   );
 }
