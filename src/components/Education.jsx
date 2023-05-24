@@ -6,16 +6,19 @@ export default function Education() {
       degree: "Web Development Certificate",
       university: "The University of Texas at Austin",
       timePeriod: "June 2022 - September 2022",
+      img: "/public/longhorns.jpg",
     },
     {
       degree: "M.S. Biological Sciences",
       university: "The University of Texas at El Paso",
       timePeriod: "August 2014 - May 2017",
+      img: "/public/pick.png",
     },
     {
       degree: "B.S. Ecology & Evolutionary Biology",
       university: "The University of Texas at El Paso",
       timePeriod: "August 2009 - May 2014",
+      img: "/public/pick.png",
     },
   ];
 
@@ -27,12 +30,19 @@ export default function Education() {
       <div className="resume-section-content">
         <h2 className="text-4xl font-bold text-darkDesert mb-4">Education</h2>
         {schools.map((school, index) => (
-          <div className="mb-4">
-            <h3 className="text-xl font-semibold text-darkDesert">
-              {school.degree}
-            </h3>
-            <p className="text-lg text-darkDesert">{school.university}</p>
-            <p className="text-darkDesert">{school.timePeriod}</p>
+          <div className="mb-4 flex items-center">
+            <img
+              src={school.img}
+              alt={school.university}
+              className="h-12 w-auto mr-4"
+            />
+            <div>
+              <h3 className="text-xl font-semibold text-darkDesert">
+                {school.degree}
+              </h3>
+              <p className="text-lg text-darkDesert">{school.university}</p>
+              <p className="text-darkDesert">{school.timePeriod}</p>
+            </div>
           </div>
         ))}
       </div>
