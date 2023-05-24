@@ -6,7 +6,7 @@ export default function About() {
     <div id="about">
       <div className="flex flex-col items-center bg-lightDesert p-8">
         <img
-          src="profile.jpg"
+          src="images/profile.jpg"
           alt="Your Name"
           className="rounded-full w-48 h-48 border-4 border-darkDesert object-cover mb-8"
         />
