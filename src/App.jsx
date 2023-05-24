@@ -13,7 +13,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="">
       <NavBar />
       <Landing />
       <About />
@@ -23,7 +23,7 @@ function App() {
       <Education />
       <ContactMe/>
       <Footer />
-    </>
+    </div>
   );
 }
 
