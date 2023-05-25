@@ -9,7 +9,9 @@ import {
   FaNpm,
 } from "react-icons/fa";
 
-import { SiVisualstudiocode, SiMongodb } from "react-icons/si";
+import { SiVisualstudiocode, SiMongodb, SiTailwindcss } from "react-icons/si";
+
+import { DiGithubBadge } from "react-icons/di";
 
 export default function Skills() {
   return (
@@ -18,25 +20,10 @@ export default function Skills() {
       className="bg-lightDesert p-4 rounded-lg shadow-md w-full mx-auto"
     >
       <div className="resume-section-content text-center">
-        <h2 className="text-4xl font-bold text-darkDesert mb-4">Skills</h2>
+        <h2 className="text-4xl font-bold text-darkDesert mb-4">Expertise</h2>
         <div className="subheading text-darkDesert mb-3 font-bold">
           Programming Languages & Tools
         </div>
-        <ul className="list-none mb-0 mx-auto">
-          {[
-            "Visual Studio Code",
-            "Git & Github",
-            "Command Line",
-            "MongoDB",
-            "MySQL",
-            "Apollo GraphQL",
-          ].map((skill) => (
-            <li className="mb-2 text-darkDesert">
-              <FaCheck className="inline-block text-goldDesert mr-2" />
-              {skill}
-            </li>
-          ))}
-        </ul>
         <div className="grid grid-cols-4 gap-4 my-4 justify-items-center">
           {[
             FaHtml5,
@@ -47,6 +34,8 @@ export default function Skills() {
             FaNpm,
             SiVisualstudiocode,
             SiMongodb,
+            DiGithubBadge,
+            SiTailwindcss,
           ].map((Icon, i) => (
             <div
               className="text-5xl text-goldDesert transition-all duration-300 transform hover:scale-110 hover:text-darkDesert"
@@ -56,19 +45,27 @@ export default function Skills() {
             </div>
           ))}
         </div>
-
-        <div className="subheading text-darkDesert mb-3 font-bold">
-          Workflow
+        <div className="font-bold text-darkDesert subheading mb-3">
+          Abilities
         </div>
-        <ul className="list-none mb-0">
-          {["Mobile-First, Responsive Design", "Agile Development"].map(
-            (workflow) => (
-              <li className="mb-2 text-darkDesert">
-                <FaCheck className="inline-block text-goldDesert mr-2" />
-                {workflow}
-              </li>
-            )
-          )}
+        <ul className="mb-0 list-none">
+          {[
+            "Adaptability",
+            "Agile Development",
+            "Attention to Detail",
+            "Communication",
+            "Creativity",
+            "Mobile-First",
+            "Problem-solving",
+            "Responsive Design",
+            "Teamwork",
+            "Time Management",
+          ].map((capability) => (
+            <li className="text-darkDesert mb-2">
+              <FaCheck className="mr-2 text-goldDesert inline-block" />
+              {capability}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

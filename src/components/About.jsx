@@ -8,7 +8,7 @@ export default function About() {
         <img
           src="images/profile.jpg"
           alt="Your Name"
-          className="rounded-full w-48 h-48 border-4 border-darkDesert object-cover mb-8"
+          className="rounded-full w-64 h-64 border-4 border-darkDesert object-cover mb-8"
         />
         <h1 className="text-4xl font-bold text-darkDesert mb-4">Sara Baqla</h1>
         <p className="text-lg text-darkDesert mb-4 text-center">

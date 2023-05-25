@@ -28,7 +28,7 @@ export default function Education() {
       className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto flex flex-col items-center justify-center"
     >
       <div className="resume-section-content">
-        <h2 className="text-4xl font-bold text-darkDesert mb-4">Education</h2>
+        <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">Education</h2>
         {schools.map((school, index) => (
           <div className="mb-4 flex items-center">
             <img

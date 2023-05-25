@@ -32,7 +32,7 @@ export default function ContactMe() {
       className="flex flex-col items-center justify-center bg-lightDesert  p-8 rounded-lg shadow-md"
     >
       <div className="w-full max-w-md">
-        <h1 className="text-4xl font-bold text-darkDesert mb-4">Contact Me</h1>
+        <h1 className="text-4xl font-bold text-darkDesert mb-4 text-center">Contact Me</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

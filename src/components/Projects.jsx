@@ -17,8 +17,8 @@ const projects = [
     description:
       "Git Me There is a user-friendly web application, crafted using HTML, CSS, JavaScript, and leveraging the power of third-party APIs. This application serves as a one-stop solution for planning transportation logistics for upcoming journeys within any U.S. city. By entering their destination, users are provided with walking and biking scores, as well as a list of nearby restaurants. For destinations with a walking score below 50, the application conveniently presents an option to book an Uber ride, ensuring an effortless travel experience.",
     thumbnail: "projects/git_me_there.png",
-    github: "https://missatrox44.github.io/git-me-there",
-    deployed: "https://github.com/missatrox44/git-me-there",
+    deployed: "https://missatrox44.github.io/git-me-there",
+    github: "https://github.com/missatrox44/git-me-there",
     date: "July 2022",
   },
   {
