@@ -60,18 +60,18 @@ const Experience = () => {
       img: "images/utep.png",
     },
   ];
-
+  
   return (
     <div
-      id="education"
+      id="experience"
       className="bg-lightDesert p-8 rounded-lg shadow-lg w-full mx-auto"
     >
-      <h2 className="text-4xl font-bold text-darkDesert mb-4">Experience</h2>
+      <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">Experience</h2>
       <div className="resume-section-content grid grid-cols-1 sm:grid-cols-2 gap-4">
         {jobExperiences.map((experience, index) => (
           <div
             key={index}
-            className="bg-lightDesert p-6 border border-darkDesert rounded-lg shadow-md hover:shadow-xl transition-shadow duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+            className="bg-lightDesert p-6 border-2 border-darkDesert rounded-lg shadow-md hover:border-4 hover:border-darkDesert transition-all duration-500 ease-in-out"
           >
             <div className="flex items-center mb-2">
               <h3 className="text-2xl font-bold text-darkDesert mr-4">
@@ -86,7 +86,7 @@ const Experience = () => {
             <p className="text-xl text-darkDesert italic mb-4">
               {experience.company}
             </p>
-            <p className="text-darkDesert">{experience.description}</p>
+            <p className="text-darkDesert hidden">{experience.description}</p>
             <p className="text-darkDesert mt-4 font-bold">
               {experience.timePeriod}
             </p>
@@ -95,6 +95,7 @@ const Experience = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Experience;
