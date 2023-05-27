@@ -16,14 +16,14 @@ export default function ContactMe() {
 
     emailjs.sendForm(serviceId, templateId, e.target, apiKey).then(
       (result) => {
-        console.log(result.text);
+        console.log("result text", result.text);
         setSuccess(true);
         setName("");
         setEmail("");
         setMessage("");
       },
       (error) => {
-        console.log(error.text);
+        console.log("error", error.text);
         alert("Failed to send message! Please try again.");
       }
     );
