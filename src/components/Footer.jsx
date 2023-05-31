@@ -3,14 +3,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-lightDesert">
+    <footer className="bg-darkDesert">
       <div className="flex flex-col items-center justify-center py-2 px-2 sm:flex-row sm:justify-between sm:py-4 sm:px-6">
-        <span className="text-sm text-darkDesert sm:text-center">
+        <span className="text-sm text-lightDesert sm:text-center">
           © {new Date().getFullYear().toString()}{" "}
           <a
             target="_blank"
             href="https://www.sarabaqla.dev/"
-            className="hover:text-desertGold hover:font-bold"
+            className="hover:text-goldDesert transition-colors duration-300"
           >
             sarabaqla.dev
           </a>
@@ -19,7 +19,7 @@ export default function Footer() {
           <a
             target="_blank"
             href="https://github.com/missatrox44"
-            className="text-darkDesert hover:text-goldDesert transition-colors duration-300"
+            className="text-lightDesert hover:text-goldDesert transition-colors duration-300"
           >
             <FaGithub className="w-5 h-5" />
             <span className="sr-only">GitHub account</span>
@@ -27,7 +27,7 @@ export default function Footer() {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/sara-baqla/"
-            className="text-darkDesert hover:text-goldDesert transition-colors duration-300"
+            className="text-lightDesert hover:text-goldDesert transition-colors duration-300"
           >
             <FaLinkedin className="w-5 h-5" />
             <span className="sr-only">LinkedIn account</span>
