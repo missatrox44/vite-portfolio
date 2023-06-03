@@ -21,7 +21,7 @@ function App() {
       <Skills />
       <Experience />
       <Education />
-      <ContactMe/>
+      <ContactMe />
       <Footer />
     </div>
   );
