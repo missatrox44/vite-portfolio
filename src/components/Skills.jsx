@@ -45,7 +45,7 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <div className="font-bold text-darkDesert subheading mb-3">
+        {/* <div className="font-bold text-darkDesert subheading mb-3">
           Abilities
         </div>
         <ul className="mb-0 list-none">
@@ -66,7 +66,7 @@ export default function Skills() {
               {capability}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
