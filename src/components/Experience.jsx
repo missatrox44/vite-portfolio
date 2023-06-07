@@ -7,14 +7,14 @@ const Experience = () => {
       title: "Junior Software Developer",
       company: "IBG Software",
       description:
-        "As a key member of an international backend development team, I contribute to building user-focused designs and interfaces aligned with our customer's goals. Beyond my primary role, I wear multiple hats to enrich the tech community. I serve as a Teaching Assistant at the IBG Institute, enlightening the developers of tomorrow, and regularly publish a tech-focused blog sharing industry trends and insights. I also extend my expertise to technical recruiting, aiding in building a competent team, and participate in React Native app development projects to enhance our mobile solutions. My dedication to agile methodologies ensures effective collaboration and continuous improvement in our daily standup meetings, sprint planning, and retrospectives.",
+        "As an integral full stack developer, I shape user-centric designs and aid tech communities through teaching at IBG Institute and authoring a weekly tech blog . Additionally, I assist in tech recruiting and React Native projects, adhering to agile methods for optimized teamwork and growth.",
       timePeriod: "November 2022 - Present",
       img: "images/ibg.png",
     },
     {
       title: "Software Developer",
       company: "Chingu",
-      description: "group project and paired programming stuff",
+      description: "During Chingu's Voyage 41, our team developed an accessible travel planning app focused on accessibility. In a separate week-long sprint, my partner and I built a Pomodoro Clock application, enhancing collaboration, time management, and React skills through Agile methods.",
       timePeriod: "October 2022 - November 2022 & March 2023",
       img: "images/chingu.png",
     },
@@ -98,7 +98,7 @@ const Experience = () => {
             <p className="text-xl text-darkDesert italic mb-4">
               {experience.company}
             </p>
-            <p className="text-darkDesert hidden">{experience.description}</p>
+            <p className="text-darkDesert">{experience.description}</p>
             <p className="text-darkDesert mt-4 font-bold">
               {experience.timePeriod}
             </p>
