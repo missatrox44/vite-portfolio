@@ -7,6 +7,7 @@ module.exports = {
         darkDesert: '#764b36',
         lightDesert:'#efe7dd',
         goldDesert: '#C88A36',
+        tealDesert: '#0D9B8C',
       },
     },
   },

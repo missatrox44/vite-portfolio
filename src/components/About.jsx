@@ -31,21 +31,21 @@ export default function About() {
           extraordinaire. From hanging out in trees to diving into captivating
           reads, I seize every moment. My most epic adventures? {" "}
           <a
-            className="hover:text-goldDesert transition-colors duration-300"
+            className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.fs.usda.gov/recarea/stnf/recarea/?recid=6521"
           >
             Trinity Alps Wilderness
           </a>
           ,{" "}
           <a
-            className="hover:text-goldDesert transition-colors duration-300"
+            className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.nps.gov/romo/index.htm"
           >
             Rocky Mountain National Park
           </a>
           , and{" "}
           <a
-            className="hover:text-goldDesert transition-colors duration-300"
+            className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.nps.gov/arch/index.htm"
           >
             Arches National Park
