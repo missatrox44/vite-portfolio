@@ -1,12 +1,14 @@
-import NavBar from "./components/NavBar";
-import Landing from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience/Experience";
-import Education from "./components/Education";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
+import {
+  NavBar,
+  Home,
+  About,
+  Projects,
+  Skills,
+  Experience,
+  Education,
+  ContactMe,
+  Footer,
+} from "../src/components/index";
 
 import "./index.css";
 import "./App.css";
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className="bg-lightDesert">
       <NavBar />
-      <Landing />
+      <Home />
       <About />
       <Projects />
       <Skills />

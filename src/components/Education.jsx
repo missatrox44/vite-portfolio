@@ -3,18 +3,21 @@ import React from "react";
 export default function Education() {
   const schools = [
     {
+      id: 1,
       degree: "Web Development Certificate",
       university: "The University of Texas at Austin",
       timePeriod: "June 2022 - September 2022",
       img: "images/longhorns.jpg",
     },
     {
+      id: 2,
       degree: "M.S. Biological Sciences",
       university: "The University of Texas at El Paso",
       timePeriod: "August 2014 - May 2017",
       img: "images/pick.png",
     },
     {
+      id: 3,
       degree: "B.S. Ecology & Evolutionary Biology",
       university: "The University of Texas at El Paso",
       timePeriod: "August 2009 - May 2014",
@@ -28,9 +31,11 @@ export default function Education() {
       className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto flex flex-col items-center justify-center"
     >
       <div className="resume-section-content">
-        <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">Education</h2>
-        {schools.map((school, index) => (
-          <div className="mb-4 flex items-center">
+        <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
+          Education
+        </h2>
+        {schools.map((school) => (
+          <div className="mb-4 flex items-center" key={school.id}>
             <img
               src={school.img}
               alt={school.university}
