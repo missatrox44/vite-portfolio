@@ -40,7 +40,7 @@ export default function ContactMe() {
         </h1>
         {success ? (
           <div>
-            <img src="/devin.svg" alt="Success" />
+            <img src="/toast.png" alt="Success" />
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
