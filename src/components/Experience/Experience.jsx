@@ -68,18 +68,13 @@ const Experience = () => {
         className="fixed inset-0 z-50 flex items-center justify-center p-6"
         overlayClassName="bg-black bg-opacity-50 transition-opacity duration-500 ease-out"
       >
-        <div className="bg-white p-6 rounded-lg shadow-2xl transform transition-transform duration-500 ease-out space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
+        <div className="bg-white p-6 rounded-lg shadow-2xl transform transition-transform duration-500 ease-out space-y-4 md:space-y-0 max-w-md">
           <button
             onClick={() => setModalContent(null)}
             className="absolute top-2 right-2 text-darkDesert hover:text-goldDesert"
           >
             <FaTimesCircle size={32} />
           </button>
-          <img
-            src={modalContent?.img}
-            alt={modalContent?.title}
-            className="h-48 w-auto rounded-lg shadow-md md:h-auto"
-          />
           <div>
             <h3 className="text-darkDesert text-2xl font-bold mb-4">
               {modalContent?.title}

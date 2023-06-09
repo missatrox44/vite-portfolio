@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function About() {
   return (
     <div id="about">
-      <div className="flex flex-col items-center bg-lightDesert p-8 mx-10">
+      <div className="flex flex-col items-center bg-lightDesert p-8 md:mx-8 lg:mx-10">
         <img
           src="images/profile.jpg"
           alt="Your Name"
@@ -33,6 +33,8 @@ export default function About() {
           <a
             className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.fs.usda.gov/recarea/stnf/recarea/?recid=6521"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Trinity Alps Wilderness
           </a>
@@ -40,6 +42,8 @@ export default function About() {
           <a
             className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.nps.gov/romo/index.htm"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Rocky Mountain National Park
           </a>
@@ -47,6 +51,8 @@ export default function About() {
           <a
             className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.nps.gov/arch/index.htm"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Arches National Park
           </a>{" "}
