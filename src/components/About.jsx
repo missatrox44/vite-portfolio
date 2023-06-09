@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function About() {
   return (
     <div id="about">
-      <div className="flex flex-col items-center bg-lightDesert p-8">
+      <div className="flex flex-col items-center bg-lightDesert p-8 mx-10">
         <img
           src="images/profile.jpg"
           alt="Your Name"
@@ -29,7 +29,7 @@ export default function About() {
         <p className="text-lg text-darkDesert mb-4 text-center">
           When I'm not jamming or coding, I'm an outdoor enthusiast and bookworm
           extraordinaire. From hanging out in trees to diving into captivating
-          reads, I seize every moment. My most epic adventures? {" "}
+          reads, I seize every moment. My most epic adventures?{" "}
           <a
             className="text-tealDesert hover:text-goldDesert transition-colors duration-300"
             href="https://www.fs.usda.gov/recarea/stnf/recarea/?recid=6521"

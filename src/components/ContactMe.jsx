@@ -10,6 +10,13 @@ export default function ContactMe() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     const serviceId = import.meta.env.VITE_SERVICE;
     const templateId = import.meta.env.VITE_TEMPLATE;
     const apiKey = import.meta.env.VITE_API;
@@ -32,10 +39,10 @@ export default function ContactMe() {
   return (
     <div
       id="contact-me"
-      className="flex flex-col items-center justify-center bg-lightDesert  p-8 rounded-lg shadow-md"
+      className="flex flex-col items-center justify-center bg-lightDesert p-8 rounded-lg shadow-md"
     >
       <div className="w-full max-w-md">
-        <h1 className="text-4xl font-bold text-darkDesert mb-4 text-center">
+        <h1 className="text-4xl font-bold text-darkDesert mb-6 text-center">
           Contact Me
         </h1>
         {success ? (
@@ -48,7 +55,7 @@ export default function ContactMe() {
               type="text"
               name="name"
               placeholder="Name"
-              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-2 rounded w-full"
+              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full shadow-md focus:border-goldDeserttransition-colors duration-200"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -57,7 +64,7 @@ export default function ContactMe() {
               type="email"
               name="email"
               placeholder="Email"
-              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-2 rounded w-full"
+              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full shadow-md focus:border-goldDesert transition-colors duration-200"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -65,14 +72,14 @@ export default function ContactMe() {
             <textarea
               name="message"
               placeholder="Message"
-              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-2 rounded w-full"
+              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full h-24 shadow-md focus:border-goldDesert transition-colors duration-200"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
             />
             <button
               type="submit"
-              className="bg-darkDesert text-lightDesert py-2 px-4 rounded w-full font-bold hover:bg-goldDesert transition-colors duration-300"
+              className="bg-darkDesert text-lightDesert py-3 px-4 rounded w-full font-bold hover:bg-goldDesert transition-colors duration-300 shadow-md"
             >
               Submit
             </button>
