@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaTimesCircle } from "react-icons/fa";
 import Modal from "react-modal";
-import projects from "./projects.json";
+import projects from "../constants/projects.json";
 
 const ProjectCard = ({ project }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

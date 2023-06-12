@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { FaTimesCircle } from "react-icons/fa";
-import jobExperiences from "./jobExperiences.json";
-import nonDevExperiences from "./nonDevExperience.json";
+import jobExperiences from "../constants/jobExperiences.json";
+import nonDevExperiences from "../constants/nonDevExperience.json";
 
 const Experience = () => {
   const [modalContent, setModalContent] = useState(null);
