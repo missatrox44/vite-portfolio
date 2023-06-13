@@ -4,12 +4,19 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function About() {
   return (
     <div id="about">
-      <div className="flex flex-col items-center bg-lightDesert p-8 md:mx-8 lg:mx-10">
+      <div className="flex flex-col items-center bg-lightDesert p-8 md:mx-6">
+        {/* <img
+          src="images/profile.jpg"
+          alt="Sara"
+          className="rounded-full w-64 h-64 border-4 border-darkDesert object-cover mb-8"
+        /> */}
+
         <img
           src="images/profile.jpg"
-          alt="Your Name"
-          className="rounded-full w-64 h-64 border-4 border-darkDesert object-cover mb-8"
+          alt="Sara"
+          className="rounded-full w-64 h-64 border-4 border-darkDesert object-cover mb-8 transition-all transform hover:scale-110 hover:rotate-3"
         />
+
         <h1 className="text-4xl font-bold text-darkDesert mb-4">Sara Baqla</h1>
         <p className="text-lg text-darkDesert mb-4 text-center">
           As a science-loving, code-wielding full-stack web dev, I whip up
