@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GITHUB_URL, LINKEDIN_URL } from "../constants/index";
 
 // Apply same CSS classes for anchor tags
 const Anchor = ({ href, children }) => (
@@ -15,7 +16,10 @@ const Anchor = ({ href, children }) => (
 );
 
 const About = () => (
-  <div id="about" className="flex flex-col items-center bg-lightDesert p-8 md:mx-6">
+  <div
+    id="about"
+    className="flex flex-col items-center bg-lightDesert p-8 md:mx-6"
+  >
     <img
       src="images/profile.jpg"
       alt="Sara"
@@ -76,10 +80,10 @@ const About = () => (
       melodies.
     </p>
     <div className="flex justify-center items-center">
-      <Anchor href="https://github.com/missatrox44">
+      <Anchor href={GITHUB_URL}>
         <FaGithub size={32} />
       </Anchor>
-      <Anchor href="https://www.linkedin.com/in/sara-baqla/">
+      <Anchor href={LINKEDIN_URL}>
         <FaLinkedin size={32} />
       </Anchor>
     </div>
