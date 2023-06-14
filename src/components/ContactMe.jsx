@@ -1,26 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
+
+// fetch environment variables outside the component or can use useEffect to avoid unnecessary computation during re-rendering
+const serviceId = import.meta.env.VITE_SERVICE;
+const templateId = import.meta.env.VITE_TEMPLATE;
+const apiKey = import.meta.env.VITE_API;
+
+// extract input tag, keep code DRY and avoid repeated style classes
+const InputField = ({ type, name, placeholder, value, onChange }) => (
+  <input
+    type={type}
+    name={name}
+    placeholder={placeholder}
+    className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full shadow-md focus:border-goldDesert transition-colors duration-200"
+    value={value}
+    onChange={onChange}
+    required
+  />
+);
 
 export default function ContactMe() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  // avoid inline functions in render. define functions outside component using useCallback hook
+  const handleNameChange = useCallback((e) => setName(e.target.value), []);
+  const handleEmailChange = useCallback((e) => setEmail(e.target.value), []);
+  const handleMessageChange = useCallback(
+    (e) => setMessage(e.target.value),
+    []
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    //email validation
+    // email input validation
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
+      setError("Please enter a valid email address.");
       return;
     }
 
-    const serviceId = import.meta.env.VITE_SERVICE;
-    const templateId = import.meta.env.VITE_TEMPLATE;
-    const apiKey = import.meta.env.VITE_API;
-
+    // emailjs logic
     emailjs.sendForm(serviceId, templateId, e.target, apiKey).then(
       (result) => {
         console.log("result text", result.text);
@@ -31,7 +55,7 @@ export default function ContactMe() {
       },
       (error) => {
         console.log("error", error.text);
-        alert("Failed to send message! Please try again.");
+        setError("Failed to send message! Please try again.");
       }
     );
   };
@@ -51,30 +75,26 @@ export default function ContactMe() {
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
-            <input
+            <InputField
               type="text"
               name="name"
               placeholder="Name"
-              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full shadow-md focus:border-goldDeserttransition-colors duration-200"
               value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
+              onChange={handleNameChange}
             />
-            <input
+            <InputField
               type="email"
               name="email"
               placeholder="Email"
-              className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full shadow-md focus:border-goldDesert transition-colors duration-200"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
+              onChange={handleEmailChange}
             />
             <textarea
               name="message"
               placeholder="Message"
               className="border border-darkDesert bg-lightDesert text-darkDesert mb-4 p-3 rounded w-full h-24 shadow-md focus:border-goldDesert transition-colors duration-200"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={handleMessageChange}
               required
             />
             <button
@@ -83,6 +103,7 @@ export default function ContactMe() {
             >
               Submit
             </button>
+            {error && <p>{error}</p>}
           </form>
         )}
       </div>
