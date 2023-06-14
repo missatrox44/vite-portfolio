@@ -1,29 +1,5 @@
 import React from "react";
-
-// define schools data outside component so it doesn't get recreated on every render
-const schools = [
-  {
-    id: 1,
-    degree: "Web Development Certificate",
-    university: "The University of Texas at Austin",
-    timePeriod: "June 2022 - September 2022",
-    img: "images/longhorns.jpg",
-  },
-  {
-    id: 2,
-    degree: "M.S. Biological Sciences",
-    university: "The University of Texas at El Paso",
-    timePeriod: "August 2014 - May 2017",
-    img: "images/pick.png",
-  },
-  {
-    id: 3,
-    degree: "B.S. Ecology & Evolutionary Biology",
-    university: "The University of Texas at El Paso",
-    timePeriod: "August 2009 - May 2014",
-    img: "images/pick.png",
-  },
-];
+import schools from "../constants/schools.json";
 
 // create School component that receives a school object as props. Render method becomes more readable
 const School = ({ school }) => (
