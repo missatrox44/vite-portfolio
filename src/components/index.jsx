@@ -1,21 +1,10 @@
-import NavBar from "./NavBar";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Experience from "./Experience";
-import Education from "./Education";
-import ContactMe from "./ContactMe";
-import Footer from "./Footer";
-
-export {
-  NavBar,
-  Home,
-  About,
-  Projects,
-  Skills,
-  Experience,
-  Education,
-  ContactMe,
-  Footer
-};
+// use barrel exports to optimize syntax and have exports/imports on same line
+export { default as NavBar } from "./NavBar";
+export { default as Home } from "./Home";
+export { default as About } from "./About";
+export { default as Projects } from "./Projects";
+export { default as Skills } from "./Skills";
+export { default as Experience } from "./Experience";
+export { default as Education } from "./Education";
+export { default as ContactMe } from "./ContactMe";
+export { default as Footer } from "./Footer";
