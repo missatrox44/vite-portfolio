@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "Junior Software Developer",
     "company": "IBG Software",
     "description": "As a skilled full-stack developer, I play a pivotal role in shaping and bringing user-centric designs to life. Additionally, I make a positive impact on tech communities through my teaching engagements at IBG Institute and my role as an author of a weekly tech blog. In addition to my development responsibilities, I actively participate in tech recruiting efforts. My focus is on React and React Native apps, all while maintaining a strong commitment to agile methodologies for optimal teamwork and continuous growth.",
@@ -7,6 +8,7 @@
     "img": "images/ibg.png"
   },
   {
+    "id": "2",
     "title": "Software Developer",
     "company": "Chingu",
     "description": "During Chingu's Voyage 41, our team developed an accessible travel planning app focused on accessibility. In a separate week-long sprint, my partner and I built a Pomodoro Clock application, enhancing collaboration, time management, and React skills through Agile methods.",

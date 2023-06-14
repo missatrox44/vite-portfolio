@@ -15,7 +15,7 @@ const Anchor = ({ href, children }) => (
 );
 
 const About = () => (
-  <div className="flex flex-col items-center bg-lightDesert p-8 md:mx-6">
+  <div id="about" className="flex flex-col items-center bg-lightDesert p-8 md:mx-6">
     <img
       src="images/profile.jpg"
       alt="Sara"
