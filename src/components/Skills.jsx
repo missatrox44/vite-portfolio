@@ -27,9 +27,9 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="bg-lightDesert p-4 rounded-lg shadow-md w-full mx-auto"
+      className="bg-lightDesert rounded-lg shadow-md  flex items-center justify-center min-h-screen p-12"
     >
-      <div className="resume-section-content text-center">
+      <div className="resume-section-content text-center max-w-2xl w-full mx-auto">
         <h2 className="text-4xl font-bold text-darkDesert mb-4">Expertise</h2>
         <div className="subheading text-darkDesert mb-3 font-bold">
           Programming Languages & Tools
