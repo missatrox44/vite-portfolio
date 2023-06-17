@@ -35,15 +35,32 @@ const Experience = () => {
         Experience
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-        {jobExperiences.map((experience) => (
-          <ExperienceCard
-            key={experience.id}
-            experience={experience}
-            onClick={() => setModalContent(experience)}
-          />
+        {jobExperiences.map((experience, index) => (
+          <div
+            key={index}
+            className="bg-lightDesert p-6 border-2 border-darkDesert rounded-lg shadow-md "
+          >
+            <div className="flex items-center mb-2">
+              <h3 className="text-2xl font-bold text-darkDesert mr-4">
+                {experience.title}
+              </h3>
+              <img
+                src={experience.img}
+                alt={experience.title}
+                className="h-12 w-auto"
+              />
+            </div>
+            <p className="text-xl text-darkDesert italic mb-4">
+              {experience.company}
+            </p>
+            <p className="text-darkDesert">{experience.description}</p>
+            <p className="text-darkDesert mt-4 font-bold">
+              {experience.timePeriod}
+            </p>
+          </div>
         ))}
       </div>
-      <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
+      <h2 className="text-4xl font-bold text-darkDesert mt-6 mb-4 text-center">
         Non Dev Experience
       </h2>
       <div className="text-darkDesert grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

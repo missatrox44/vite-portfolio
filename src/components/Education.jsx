@@ -21,9 +21,9 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto flex flex-col items-center justify-center min-h-screen"
+      className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto flex flex-col items-center justify-center h-screen"
     >
-      <div className="resume-section-content">
+      <div >
         <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
           Education
         </h2>
