@@ -1,19 +1,19 @@
 import React, { useState, useCallback } from "react";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const linkClasses =
   "block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700";
 
 const NavLink = ({ to, onClick, children }) => (
   <li>
-    <HashLink
+    <Link
       to={to}
       onClick={onClick}
       className={`${linkClasses}`}
       aria-current="page"
     >
       {children}
-    </HashLink>
+    </Link>
   </li>
 );
 
@@ -28,7 +28,7 @@ export default function NavBar() {
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-darkDesert fixed top-0 w-full z-50">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               src="/dev-icon.svg"
               className="mr-3 h-6 sm:h-9"
@@ -37,7 +37,7 @@ export default function NavBar() {
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               sarabaqla.dev
             </span>
-          </a>
+          </Link>
           <div className="flex items-center lg:order-2">
             <button
               onClick={toggleOpen}
@@ -80,32 +80,32 @@ export default function NavBar() {
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <NavLink to="#home" onClick={toggleOpen}>
+              <NavLink to="/" onClick={toggleOpen}>
                 Home
               </NavLink>
-              <NavLink to="#about" onClick={toggleOpen}>
+              <NavLink to="/about" onClick={toggleOpen}>
                 About
               </NavLink>
-              <NavLink to="#projects" onClick={toggleOpen}>
+              <NavLink to="/projects" onClick={toggleOpen}>
                 Projects
               </NavLink>
-              <NavLink to="#skills" onClick={toggleOpen}>
+              <NavLink to="/skills" onClick={toggleOpen}>
                 Skills
               </NavLink>
-              <NavLink to="#experience" onClick={toggleOpen}>
+              <NavLink to="/experience" onClick={toggleOpen}>
                 Experience
               </NavLink>
-              <NavLink to="#education" onClick={toggleOpen}>
+              <NavLink to="/education" onClick={toggleOpen}>
                 Education
               </NavLink>
-              <NavLink to="#contact-me" onClick={toggleOpen}>
+              <NavLink to="/contact" onClick={toggleOpen}>
                 Contact Me
               </NavLink>
-              <li>
+              {/* <li>
                 <a href="/baqla_resume.pdf" className={linkClasses}>
                   Resume
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

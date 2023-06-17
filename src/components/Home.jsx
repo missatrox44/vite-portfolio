@@ -3,9 +3,11 @@ import landingImg from "/logo.svg";
 
 export default function Home() {
   return (
-    <div id="home" className="bg-lightDesert py-12 px-8">
+    <div
+      id="home"
+      className="bg-lightDesert flex items-center justify-center min-h-screen">
       <img
-        className="w-full mt-12"
+        className="w-fit"
         src={landingImg}
         alt="Trumpet with tentacle logo"
       />

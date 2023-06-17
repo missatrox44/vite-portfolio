@@ -63,7 +63,7 @@ export default function ContactMe() {
   return (
     <div
       id="contact-me"
-      className="flex flex-col items-center justify-center bg-lightDesert p-8 rounded-lg shadow-md"
+      className="flex flex-col items-center justify-center bg-lightDesert p-8 rounded-lg shadow-md min-h-screen"
     >
       <div className="w-full max-w-md">
         <h1 className="text-4xl font-bold text-darkDesert mb-6 text-center">

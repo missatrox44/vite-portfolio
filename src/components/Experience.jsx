@@ -29,7 +29,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="bg-lightDesert p-8 rounded-lg shadow-lg w-full mx-auto"
+      className="bg-lightDesert p-8 rounded-lg shadow-lg w-full mx-auto mt-12"
     >
       <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
         Experience
