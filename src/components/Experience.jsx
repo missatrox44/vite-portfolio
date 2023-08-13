@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import { FaTimesCircle, FaCode, FaBook } from "react-icons/fa";
+import { FaTimesCircle, FaBook } from "react-icons/fa";
 import { DiVisualstudio } from "react-icons/di";
 import {
   VerticalTimeline,
@@ -12,8 +12,9 @@ import nonDevExperiences from "../constants/nonDevExperience.json";
 
 const JobExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    icon={<DiVisualstudio />}
+    icon={<DiVisualstudio className="text-darkDesert" />}
     contentStyle={{ position: "relative" }}
+    date={<span className="text-darkDesert">{experience.timePeriod}</span>}
   >
     <img
       src={experience.img}
@@ -23,31 +24,39 @@ const JobExperienceCard = ({ experience }) => (
     <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
     <p className="text-xl text-darkDesert italic mb-4">{experience.company}</p>
     <p className="text-darkDesert">{experience.description}</p>
-    <p className="text-darkDesert mt-4 font-bold">{experience.timePeriod}</p>
   </VerticalTimelineElement>
 );
 
 const NonDevExperienceCard = ({ experience, onClick }) => (
   <VerticalTimelineElement
-    icon={<FaBook />}
+    icon={<FaBook className="text-darkDesert" />}
     contentStyle={{ position: "relative" }}
+    date={<span className="text-darkDesert">{experience.timePeriod}</span>}
   >
-    <img
-      src={experience.img}
-      alt={experience.title}
-      className="
-                w-auto 
-                h-16 sm:h-18 md:h-24 lg:h-28 xl:h-32 
-                rounded-full 
-                absolute right-0 top-50% 
-                transform -translate-y-50% 
-                mr-2
-                mt-3"
-    />
+    <div className="items-center">
+      <img
+        src={experience.img}
+        alt={experience.title}
+        className="
+    w-auto 
+    h-16 sm:h-18 md:h-24 lg:h-28 xl:h-32 
+    rounded-full
+    justify-end
+    absolute right-0  
+    mr-2
+  "
+      />
+    </div>
     <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
-    <p className="text-xl text-darkDesert italic mb-4">{experience.company}</p>
-    <p className="text-darkDesert mt-4 font-bold">{experience.timePeriod}</p>
-    <button className="text-darkDesert font-bold" onClick={onClick}>Details</button>
+    <p className="text-xl text-darkDesert italic mb-2">{experience.company}</p>
+    <div className="flex justify-between items-center">
+      <button
+        className="text-darkDesert font-bold hover:text-goldDesert"
+        onClick={onClick}
+      >
+        Learn more...
+      </button>
+    </div>
   </VerticalTimelineElement>
 );
 
