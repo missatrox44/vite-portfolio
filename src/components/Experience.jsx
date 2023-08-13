@@ -1,26 +1,63 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import { FaTimesCircle } from "react-icons/fa";
+import { FaTimesCircle, FaBook } from "react-icons/fa";
+import { DiVisualstudio } from "react-icons/di";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import jobExperiences from "../constants/jobExperiences.json";
 import nonDevExperiences from "../constants/nonDevExperience.json";
 
-// ExperienceCard sub-component for individual experiences. Makes code more modular and easier to maintain
-const ExperienceCard = ({ experience, onClick }) => (
-  <div
-    onClick={onClick}
-    className="bg-lightDesert p-6 border-2 border-darkDesert rounded-lg shadow-md transform transition-all duration-500 ease-in-out cursor-pointer hover:shadow-xl hover:scale-105"
+const JobExperienceCard = ({ experience }) => (
+  <VerticalTimelineElement
+    icon={<DiVisualstudio className="text-darkDesert" />}
+    contentStyle={{ position: "relative" }}
+    date={<span className="text-darkDesert">{experience.timePeriod}</span>}
   >
-    <div className="flex flex-col items-center text-center">
+    <img
+      src={experience.img}
+      alt={experience.title}
+      className="h-14 w-auto rounded-full absolute top-0 right-0 mt-2 mr-2"
+    />
+    <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
+    <p className="text-xl text-darkDesert italic mb-4">{experience.company}</p>
+    <p className="text-darkDesert">{experience.description}</p>
+  </VerticalTimelineElement>
+);
+
+const NonDevExperienceCard = ({ experience, onClick }) => (
+  <VerticalTimelineElement
+    icon={<FaBook className="text-darkDesert" />}
+    contentStyle={{ position: "relative" }}
+    date={<span className="text-darkDesert">{experience.timePeriod}</span>}
+  >
+    <div className="items-center">
       <img
         src={experience.img}
         alt={experience.title}
-        className="h-24 w-auto mb-4 rounded-full"
-        role="img"
-        aria-label={experience.title}
+        className="
+    w-auto 
+    h-16 sm:h-18 md:h-24 lg:h-28 xl:h-32 
+    rounded-full
+    justify-end
+    absolute right-0  
+    mr-2
+  "
       />
-      <h2 className="text-darkDesert text-2xl font-bold">{experience.title}</h2>
     </div>
-  </div>
+    <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
+    <p className="text-xl text-darkDesert italic mb-2">{experience.company}</p>
+    <div className="flex justify-between items-center">
+      <button
+        className="text-darkDesert font-bold hover:text-goldDesert"
+        onClick={onClick}
+      >
+        Learn more...
+      </button>
+    </div>
+  </VerticalTimelineElement>
 );
 
 const Experience = () => {
@@ -34,44 +71,25 @@ const Experience = () => {
       <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
         Experience
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+      <VerticalTimeline>
         {jobExperiences.map((experience, index) => (
-          <div
-            key={index}
-            className="bg-lightDesert p-6 border-2 border-darkDesert rounded-lg shadow-md "
-          >
-            <div className="flex items-center mb-2">
-              <h3 className="text-2xl font-bold text-darkDesert mr-4">
-                {experience.title}
-              </h3>
-              <img
-                src={experience.img}
-                alt={experience.title}
-                className="h-12 w-auto"
-              />
-            </div>
-            <p className="text-xl text-darkDesert italic mb-4">
-              {experience.company}
-            </p>
-            <p className="text-darkDesert">{experience.description}</p>
-            <p className="text-darkDesert mt-4 font-bold">
-              {experience.timePeriod}
-            </p>
-          </div>
+          <JobExperienceCard key={index} experience={experience} />
         ))}
-      </div>
+      </VerticalTimeline>
+
       <h2 className="text-4xl font-bold text-darkDesert mt-6 mb-4 text-center">
         Non Dev Experience
       </h2>
-      <div className="text-darkDesert grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <VerticalTimeline>
         {nonDevExperiences.map((experience) => (
-          <ExperienceCard
+          <NonDevExperienceCard
             key={experience.id}
             experience={experience}
             onClick={() => setModalContent(experience)}
           />
         ))}
-      </div>
+      </VerticalTimeline>
+
       <Modal
         isOpen={!!modalContent}
         onRequestClose={() => setModalContent(null)}
