@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
+import { useSpring, animated } from "react-spring";
 
 // fetch environment variables outside the component or can use useEffect to avoid unnecessary computation during re-rendering
 const serviceId = import.meta.env.VITE_SERVICE;
@@ -20,6 +21,11 @@ const InputField = ({ type, name, placeholder, value, onChange }) => (
 );
 
 export default function ContactMe() {
+  const contactSpring = useSpring({
+    from: { opacity: 0, transform: "scale(0.5)" },
+    to: { opacity: 1, transform: "scale(1)" },
+  });
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -61,9 +67,10 @@ export default function ContactMe() {
   };
 
   return (
-    <div
+    <animated.section
       id="contact-me"
       className="flex flex-col items-center justify-center bg-lightDesert p-8 rounded-lg shadow-md min-h-screen"
+      style={contactSpring}
     >
       <div className="w-full max-w-md">
         <h1 className="text-4xl font-bold text-darkDesert mb-6 text-center">
@@ -107,6 +114,6 @@ export default function ContactMe() {
           </form>
         )}
       </div>
-    </div>
+    </animated.section>
   );
 }
