@@ -1,5 +1,6 @@
 import React from "react";
 import schools from "../constants/schools.json";
+import { useSpring, animated } from "react-spring";
 
 // create School component that receives a school object as props. Render method becomes more readable
 const School = ({ school }) => (
@@ -18,12 +19,18 @@ const School = ({ school }) => (
 );
 
 export default function Education() {
+  const educationSpring = useSpring({
+    from: { opacity: 0, transform: "scale(0.5)" },
+    to: { opacity: 1, transform: "scale(1)" },
+  });
+
   return (
-    <section
+    <animated.section
       id="education"
       className="bg-lightDesert p-8 rounded-lg shadow-md w-full mx-auto flex flex-col items-center justify-center h-screen"
+      style={educationSpring}
     >
-      <div >
+      <div>
         <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
           Education
         </h2>
@@ -31,6 +38,6 @@ export default function Education() {
           <School key={school.id} school={school} />
         ))}
       </div>
-    </section>
+    </animated.section>
   );
 }
