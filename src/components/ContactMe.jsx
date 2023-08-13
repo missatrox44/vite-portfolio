@@ -61,7 +61,9 @@ export default function ContactMe() {
       },
       (error) => {
         console.log("error", error.text);
-        setError("Failed to send message! Please try again.");
+        setError(
+          "Oops! It seems the JavaScript deities are having a moody day. Fear not, our digital shaman Sara is on it! If you need to bypass the spiritual realm and chat directly, email her at missatrox44@gmail.com"
+        );
       }
     );
   };
@@ -110,7 +112,7 @@ export default function ContactMe() {
             >
               Submit
             </button>
-            {error && <p>{error}</p>}
+            {error && <p className="mt-4 text-red-500">{error}</p>}
           </form>
         )}
       </div>
