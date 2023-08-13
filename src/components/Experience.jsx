@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import { FaTimesCircle, FaBook } from "react-icons/fa";
-import { DiVisualstudio } from "react-icons/di";
+import { FaTimesCircle } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,15 +11,21 @@ import nonDevExperiences from "../constants/nonDevExperience.json";
 
 const JobExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    icon={<DiVisualstudio className="text-darkDesert" />}
+    icon={
+      <img
+        src={experience.img}
+        alt={experience.title}
+        className="h-full w-full rounded-full block "
+      />
+    }
     contentStyle={{ position: "relative" }}
     date={<span className="text-darkDesert">{experience.timePeriod}</span>}
   >
-    <img
+    {/* <img
       src={experience.img}
       alt={experience.title}
-      className="h-14 w-auto rounded-full absolute top-0 right-0 mt-2 mr-2"
-    />
+      className=" hidden md:block h-14 w-auto rounded-full absolute top-0 right-0 mt-2 mr-2"
+    /> */}
     <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
     <p className="text-xl text-darkDesert italic mb-4">{experience.company}</p>
     <p className="text-darkDesert">{experience.description}</p>
@@ -29,24 +34,30 @@ const JobExperienceCard = ({ experience }) => (
 
 const NonDevExperienceCard = ({ experience, onClick }) => (
   <VerticalTimelineElement
-    icon={<FaBook className="text-darkDesert" />}
+    icon={
+      <img
+        src={experience.img}
+        alt={experience.title}
+        className="h-full w-full rounded-full block"
+      />
+    }
     contentStyle={{ position: "relative" }}
     date={<span className="text-darkDesert">{experience.timePeriod}</span>}
   >
-    <div className="items-center">
+    {/* <div className="items-center">
       <img
         src={experience.img}
         alt={experience.title}
         className="
-    w-auto 
-    h-16 sm:h-18 md:h-24 lg:h-28 xl:h-32 
-    rounded-full
-    justify-end
-    absolute right-0  
-    mr-2
-  "
+        hidden md:block
+        w-auto 
+        h-16 sm:h-18 md:h-24 lg:h-28 xl:h-32 
+        rounded-full
+        justify-end
+        absolute right-0  
+       mr-2"
       />
-    </div>
+    </div> */}
     <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
     <p className="text-xl text-darkDesert italic mb-2">{experience.company}</p>
     <div className="flex justify-between items-center">
@@ -54,7 +65,7 @@ const NonDevExperienceCard = ({ experience, onClick }) => (
         className="text-darkDesert font-bold hover:text-goldDesert"
         onClick={onClick}
       >
-        Learn more...
+        Read more...
       </button>
     </div>
   </VerticalTimelineElement>
