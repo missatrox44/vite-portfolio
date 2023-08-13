@@ -16,6 +16,7 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.13.0",
     "react-router-hash-link": "^2.4.3",
+    "react-spring": "^9.7.2",
     "reset-css": "^5.0.1",
     "styled-components": "^5.3.6"
   },
