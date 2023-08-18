@@ -8,3 +8,4 @@ export { default as Experience } from "./Experience";
 export { default as Education } from "./Education";
 export { default as ContactMe } from "./ContactMe";
 export { default as Footer } from "./Footer";
+export { default as NotFound } from "./NotFound";

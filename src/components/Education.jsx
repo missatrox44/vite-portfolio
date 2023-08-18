@@ -1,11 +1,12 @@
 import React from "react";
 import schools from "../constants/schools.json";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated, useTrail } from "react-spring";
 
 // create School component that receives a school object as props. Render method becomes more readable
-const School = ({ school }) => (
+const School = ({ school, imageStyle }) => (
   <div className="mb-4 flex items-center">
-    <img
+    <animated.img
+      style={imageStyle}
       src={school.img}
       alt={school.university}
       className="h-12 w-auto mr-4"
@@ -24,6 +25,11 @@ export default function Education() {
     to: { opacity: 1, transform: "scale(1)" },
   });
 
+  const imageTrails = useTrail(schools.length, {
+    from: { transform: "translate3d(-100%,0,0) rotate(-360deg)", opacity: 0 },
+    to: { transform: "translate3d(0%,0,0) rotate(0deg)", opacity: 1 },
+  });
+
   return (
     <animated.section
       id="education"
@@ -34,8 +40,12 @@ export default function Education() {
         <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
           Education
         </h2>
-        {schools.map((school) => (
-          <School key={school.id} school={school} />
+        {schools.map((school, index) => (
+          <School
+            key={school.id}
+            school={school}
+            imageStyle={imageTrails[index]}
+          />
         ))}
       </div>
     </animated.section>

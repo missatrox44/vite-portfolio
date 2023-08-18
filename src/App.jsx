@@ -10,6 +10,7 @@ import {
   Education,
   ContactMe,
   Footer,
+  NotFound,
 } from "../src/components/index";
 
 import "./index.css";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<ContactMe />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
