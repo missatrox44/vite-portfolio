@@ -42,5 +42,14 @@
     "github": "https://github.com/missatrox44/love-thy-selfie",
     "deployed": "https://www.lovethyselfiephotobooth.com/",
     "date": "May 2022"
+  },
+  {
+    "id": "6",
+    "title": "Portfolio (legacy)",
+    "description": "A meticulously designed digital showcase of my diverse projects and technical prowess. Crafted using Bootstrap, this portfolio captures the essence of responsiveness and modern design aesthetics. It presents my works in an organized, elegant manner, ensuring smooth navigation and optimal viewing across all device sizes. From the intricate animations to the intuitive layouts, every aspect of this portfolio is a testament to my commitment to quality and attention to detail.",
+    "thumbnail": "projects/bootstrap_portfolio.png",
+    "github": "https://github.com/missatrox44/portfolio",
+    "deployed": "https://missatrox44.github.io/portfolio/",
+    "date": "September 2022"
   }
 ]
