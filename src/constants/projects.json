@@ -5,7 +5,7 @@
     "description": "Baes is a comprehensive application built on the MERN stack, designed with the aim of enhancing personal relationships. It enables users to maintain and manage crucial information about their significant contacts. With Baes, users can set up an account, modify their profiles, forge connections, and record customized notes about their interactions and relationships.",
     "thumbnail": "projects/baes.png",
     "github": "https://github.com/missatrox44/baesii",
-    "deployed": "https://loversnotfighters.herokuapp.com/",
+    "deployed": "https://loversnotfighters.vercel.app/",
     "date": "September 2022"
   },
   {
