@@ -51,5 +51,14 @@
     "github": "https://github.com/missatrox44/portfolio",
     "deployed": "https://missatrox44.github.io/portfolio/",
     "date": "September 2022"
+  },
+  {
+    "id": "7",
+    "title": "Travel 2 It",
+    "description": "Introducing Travel 2 It – your next must-have travel companion, masterfully crafted during the 6-week Chingu Voyage 41 journey. Dive into a seamless trip-planning experience, where organizing is as simple as creating editable stacks and cards. From jotting down must-visit spots to curating detailed plans, each card is your canvas. Not set on the order? Fluidly drag and drop cards or entire stacks until it feels just right. Enjoy our elegant Dark & Light Modes. Sharing your journeys with loved ones via Email, Facebook, or Whatsapp is available now! Make every trip a masterpiece with Travel 2 It.",
+    "thumbnail": "projects/travel_2_it.png",
+    "github": "https://github.com/missatrox44/travel2it",
+    "deployed": "https://cosmic-gnome-4fc624.netlify.app/",
+    "date": "December 2022"
   }
 ]
