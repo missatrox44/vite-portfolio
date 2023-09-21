@@ -60,5 +60,14 @@
     "github": "https://github.com/missatrox44/travel2it",
     "deployed": "https://cosmic-gnome-4fc624.netlify.app/",
     "date": "December 2022"
+  },
+  {
+    "id": "8",
+    "title": "Pomodoro Timer",
+    "description": "The fruit of a dynamic week-long paired programming challenge, curated by Chingu. Crafted by two efficiency enthusiasts, our app breathes fresh life into the revered Pomodoro technique that we passionately incorporate into our daily routines. Taking inspiration, yet adding our flair, we've not only cloned a popular app but have enhanced it with a unique \"Developer Mode\". This speedy mode whizzes through time, allowing users to swiftly experience functionalities. Enhance your productivity cycles with the Pomodoro Timer, and witness time-management in a whole new light!",
+    "thumbnail": "projects/pomodoro_timer.png",
+    "github": "https://github.com/missatrox44/pomodoro-clock",
+    "deployed": "https://missatrox44.github.io/pomodoro-clock/",
+    "date": "March 2023"
   }
 ]
