@@ -40,11 +40,21 @@ Found something interesting? Want to chat about a project or just say hi? The co
 This project is open-source under the MIT License.
 
 ---
+### 🛠️ Local Setup
 
-To set this up locally, feel free to clone the repository, install the necessary packages, and run it in your local environment.
+You can set up this project locally by following these steps:
 
+#### Using HTTPS:
 ```
-git clone https://github.com/your_username/vite-portfolio.git
+git clone https://github.com/missatrox44/vite-portfolio.git
+cd vite-portfolio
+npm install
+npm run dev
+```
+
+#### Using SSH:
+```
+git clone git@github.com:missatrox44/vite-portfolio.git
 cd vite-portfolio
 npm install
 npm run dev
