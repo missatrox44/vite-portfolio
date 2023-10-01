@@ -4,7 +4,10 @@ Welcome to the Vite Portfolio repository, a project that showcases my profession
 
 ![Landing Page Screenshot](./public/images/landing.png)
 
-### 🚀 [Live Demo](your_deployed_link_here)
+### 🚀 [Live Demo](https://www.sarabaqla.dev/)
+
+Hosted on [Vercel](https://vercel.com/), known for its performance and scalability, ensuring a smooth experience for every visitor.
+
 
 ### 📱 Mobile Optimized
 
@@ -14,13 +17,13 @@ This site has been meticulously designed to ensure an optimal viewing experience
 
 ### 🔧 Built With
 
-- **React**: A powerful library for building UI components.
-- **Vite**: A blazing fast frontend build tool, making the development process a breeze.
-- **Tailwind CSS**: A utility-first CSS framework for rapidly building modern user interfaces.
-- **React-Spring**: A spring physics based animation library that adds that extra flair to the site's interactions.
-- **React Vertical Timeline Component**: Used to chronologically display my job experience.
-- **EmailJS**: Ensures that anyone reaching out through the contact form gets their messages delivered directly to my inbox.
-- **React-Router-Dom**: Handles seamless navigation throughout the site.
+- [**React**](https://react.dev/): A powerful library for building UI components.
+- [**Vite**](https://vitejs.dev/): A blazing fast frontend build tool, making the development process a breeze.
+- [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework for rapidly building modern user interfaces.
+- [**React-Spring**](https://www.react-spring.dev/): A spring physics based animation library that adds that extra flair to the site's interactions.
+- [**React Vertical Timeline Component**](https://www.npmjs.com/package/react-vertical-timeline-component): Used to chronologically display my job experience.
+- [**EmailJS**](https://www.emailjs.com/): Ensures that anyone reaching out through the contact form gets their messages delivered directly to my inbox.
+- [**React-Router-Dom**](https://reactrouter.com/en/main): Handles seamless navigation throughout the site.
 
 ### 🎥 Highlights
 
