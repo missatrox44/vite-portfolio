@@ -72,7 +72,7 @@ const ProjectCard = ({ project, openModal }) => {
           className="w-full h-64 object-cover rounded-lg shadow-md"
         />
         <div className="absolute inset-0 bg-darkDesert bg-opacity-70 flex items-center justify-center rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-all duration-500">
-          <h1 className="text-lightDesert text-2xl md:text-3xl font-bold">
+          <h1 className="text-lightDesert text-center text-sm md:text-2xl lg:text-3xl truncate w-11/12 md:w-10/12 font-bold">
             {project.title}
           </h1>
         </div>
@@ -81,7 +81,7 @@ const ProjectCard = ({ project, openModal }) => {
         </button>
       </div>
     </animated.div>
-  );
+  );  
 };
 
 export default function Projects() {
