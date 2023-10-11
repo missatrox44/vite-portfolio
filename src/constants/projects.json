@@ -1,15 +1,6 @@
 [
   {
     "id": "1",
-    "title": "Baes",
-    "description": "Baes is a comprehensive application built on the MERN stack, designed with the aim of enhancing personal relationships. It enables users to maintain and manage crucial information about their significant contacts. With Baes, users can set up an account, modify their profiles, forge connections, and record customized notes about their interactions and relationships.",
-    "thumbnail": "projects/baes.png",
-    "github": "https://github.com/missatrox44/baesii",
-    "deployed": "https://loversnotfighters.vercel.app/",
-    "date": "September 2022"
-  },
-  {
-    "id": "2",
     "title": "Git Me There",
     "description": "Git Me There is a user-friendly web application, crafted using HTML, CSS, JavaScript, and leveraging the power of third-party APIs. This application serves as a one-stop solution for planning transportation logistics for upcoming journeys within any U.S. city. By entering their destination, users are provided with walking and biking scores, as well as a list of nearby restaurants. For destinations with a walking score below 50, the application conveniently presents an option to book an Uber ride, ensuring an effortless travel experience.",
     "thumbnail": "projects/git_me_there.png",
@@ -18,7 +9,7 @@
     "date": "July 2022"
   },
   {
-    "id": "3",
+    "id": "2",
     "title": "Fact or Fiction",
     "description": "Fact or Fiction is a dynamic full-stack application offering users an engaging gaming experience. The game involves discerning whether given laws or headlines are authentic or fabricated. Developed using Handlebars.js, Express.js, and Sequelize, the project employs Bootstrap for styling, ensuring a sleek and intuitive user interface.",
     "thumbnail": "projects/fact_or_fiction.png",
@@ -27,24 +18,16 @@
     "date": "August 2022"
   },
   {
+    "id": "3",
+    "title": "Baes",
+    "description": "Baes is a comprehensive application built on the MERN stack, designed with the aim of enhancing personal relationships. It enables users to maintain and manage crucial information about their significant contacts. With Baes, users can set up an account, modify their profiles, forge connections, and record customized notes about their interactions and relationships.",
+    "thumbnail": "projects/baes.png",
+    "github": "https://github.com/missatrox44/baesii",
+    "deployed": "https://loversnotfighters.vercel.app/",
+    "date": "September 2022"
+  },
+  {
     "id": "4",
-    "title": "OHS Broncho Band",
-    "description": "This project involved a comprehensive refactoring of the Odessa High School Broncho Band's website. It was redesigned to be mobile responsive, while also updating images and links for a more appealing and user-friendly experience. New pages were added, working in close collaboration with the band director to ensure that the final design echoed her vision and faithfully represented the values of the OHS Broncho Band. The website was expertly crafted using tools from WiX and continues to be a work in progress, reflecting the ever-evolving spirit of the band program.",
-    "thumbnail": "projects/odessa_band_screenshot.png",
-    "deployed": "https://www.odessaband.org/",
-    "date": "October 2022"
-  },
-  {
-    "id": "5",
-    "title": "Love Thy Selfie",
-    "description": "Love Thy Selfie is an intuitive, mobile-first React application designed to digitally transform a local photo booth business. Embodying the spirit of 'Love Thy Selfie', this platform offers users a comprehensive overview of the diverse services provided, including vivid picture examples, and authentic customer reviews. It also showcases the geographic service areas to help customers understand their reach. One of the key features is a seamlessly integrated contact form powered by Email.js, enabling customers to easily inquire about booking opportunities. With its user-friendly interface and responsive design, the Love Thy Selfie website effectively brings the unique essence of the photo booth experience online, and at the fingertips of potential customers.",
-    "thumbnail": "projects/love_thy_selfie.png",
-    "github": "https://github.com/missatrox44/love-thy-selfie",
-    "deployed": "https://www.lovethyselfiephotobooth.com/",
-    "date": "May 2022"
-  },
-  {
-    "id": "6",
     "title": "Portfolio (legacy)",
     "description": "A meticulously designed digital showcase of my diverse projects and technical prowess. Crafted using Bootstrap, this portfolio captures the essence of responsiveness and modern design aesthetics. It presents my works in an organized, elegant manner, ensuring smooth navigation and optimal viewing across all device sizes. From the intricate animations to the intuitive layouts, every aspect of this portfolio is a testament to my commitment to quality and attention to detail.",
     "thumbnail": "projects/bootstrap_portfolio.png",
@@ -53,7 +36,15 @@
     "date": "September 2022"
   },
   {
-    "id": "7",
+    "id": "5",
+    "title": "OHS Broncho Band",
+    "description": "This project involved a comprehensive refactoring of the Odessa High School Broncho Band's website. It was redesigned to be mobile responsive, while also updating images and links for a more appealing and user-friendly experience. New pages were added, working in close collaboration with the band director to ensure that the final design echoed her vision and faithfully represented the values of the OHS Broncho Band. The website was expertly crafted using tools from WiX and continues to be a work in progress, reflecting the ever-evolving spirit of the band program.",
+    "thumbnail": "projects/odessa_band_screenshot.png",
+    "deployed": "https://www.odessaband.org/",
+    "date": "October 2022"
+  },
+  {
+    "id": "6",
     "title": "Travel 2 It",
     "description": "Introducing Travel 2 It – your next must-have travel companion, masterfully crafted during the 6-week Chingu Voyage 41 journey. Dive into a seamless trip-planning experience, where organizing is as simple as creating editable stacks and cards. From jotting down must-visit spots to curating detailed plans, each card is your canvas. Not set on the order? Fluidly drag and drop cards or entire stacks until it feels just right. Enjoy our elegant Dark & Light Modes. Sharing your journeys with loved ones via Email, Facebook, or Whatsapp is available now! Make every trip a masterpiece with Travel 2 It.",
     "thumbnail": "projects/travel_2_it.png",
@@ -62,12 +53,30 @@
     "date": "December 2022"
   },
   {
-    "id": "8",
+    "id": "7",
     "title": "Pomodoro Timer",
     "description": "The fruit of a dynamic week-long paired programming challenge, curated by Chingu. Crafted by two efficiency enthusiasts, our app breathes fresh life into the revered Pomodoro technique that we passionately incorporate into our daily routines. Taking inspiration, yet adding our flair, we've not only cloned a popular app but have enhanced it with a unique \"Developer Mode\". This speedy mode whizzes through time, allowing users to swiftly experience functionalities. Enhance your productivity cycles with the Pomodoro Timer, and witness time-management in a whole new light!",
     "thumbnail": "projects/pomodoro_timer.png",
     "github": "https://github.com/missatrox44/pomodoro-clock",
     "deployed": "https://missatrox44.github.io/pomodoro-clock/",
     "date": "March 2023"
+  },
+  {
+    "id": "8",
+    "title": "Love Thy Selfie",
+    "description": "Love Thy Selfie is an intuitive, mobile-first React application designed to digitally transform a local photo booth business. Embodying the spirit of 'Love Thy Selfie', this platform offers users a comprehensive overview of the diverse services provided, including vivid picture examples, and authentic customer reviews. It also showcases the geographic service areas to help customers understand their reach. One of the key features is a seamlessly integrated contact form powered by Email.js, enabling customers to easily inquire about booking opportunities. With its user-friendly interface and responsive design, the Love Thy Selfie website effectively brings the unique essence of the photo booth experience online, and at the fingertips of potential customers.",
+    "thumbnail": "projects/love_thy_selfie.png",
+    "github": "https://github.com/missatrox44/love-thy-selfie",
+    "deployed": "https://www.lovethyselfiephotobooth.com/",
+    "date": "May 2023"
+  },
+  {
+    "id": "9",
+    "title": "Crab City Server Rotation",
+    "description": "Crab City Server Rotation is a modern and efficient solution designed to streamline table rotations for a local restaurant. Initially, the restaurant managed rotations using a manual whiteboard system which proved to be challenging during peak hours. To provide a more optimized solution, my colleagues and I developed this React web app. At its core, the application leverages the capabilities of Firebase's Realtime Database to ensure that table rotation data is managed in real-time. This guarantees that the staff has an up-to-date view of table statuses, leading to improved customer service and streamlined operations. Furthermore, we incorporated Tailwind CSS to ensure the user interface is both intuitive and aesthetically pleasing. While the provided link showcases the demo, the actual implementation for the restaurant remains private, complete with its own secure login.",
+    "thumbnail": "projects/crab-city.png",
+    "github": "https://github.com/missatrox44/server-rotation-crab-city",
+    "deployed": "https://crab-city.vercel.app/",
+    "date": "October 2023"
   }
 ]
