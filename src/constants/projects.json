@@ -72,11 +72,20 @@
   },
   {
     "id": "9",
-    "title": "Crab City Server Rotation",
+    "title": "Server Rotation",
     "description": "Crab City Server Rotation is a modern and efficient solution designed to streamline table rotations for a local restaurant. Initially, the restaurant managed rotations using a manual whiteboard system which proved to be challenging during peak hours. To provide a more optimized solution, my colleagues and I developed this React web app. At its core, the application leverages the capabilities of Firebase's Realtime Database to ensure that table rotation data is managed in real-time. This guarantees that the staff has an up-to-date view of table statuses, leading to improved customer service and streamlined operations. Furthermore, we incorporated Tailwind CSS to ensure the user interface is both intuitive and aesthetically pleasing. While the provided link showcases the demo, the actual implementation for the restaurant remains private, complete with its own secure login.",
     "thumbnail": "projects/crab-city.png",
     "github": "https://github.com/missatrox44/server-rotation-crab-city",
     "deployed": "https://crab-city.vercel.app/",
+    "date": "October 2023"
+  },
+  {
+    "id": "10",
+    "title": "SEB Events",
+    "description": "A hands-on exploration of Next.js routing intricacies, SEBevents exemplifies file-to-route translations, slug routes, and single parameter routing. Seamlessly merging React components with Next.js page structures, the application features an intuitive event browsing system. Users can view spotlighted events, delve into detailed event cards, or filter events by month and year. Incorporating the useRouter hook, the app facilitates programmatic navigation and effortlessly decodes URL-embedded data. With robust error-handling mechanisms, SEBevents promises a smooth user experience.",
+    "thumbnail": "projects/seb-events.png",
+    "github": "https://github.com/missatrox44/nextjs-events",
+    "deployed": "https://seb-events.vercel.app/",
     "date": "October 2023"
   }
 ]
