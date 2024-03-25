@@ -61,7 +61,7 @@ export default function Home() {
             <FaLinkedin className="w-10 h-10" />
             <span className="sr-only">LinkedIn account</span>
           </a>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href={YOUTUBE_URL}
@@ -69,7 +69,7 @@ export default function Home() {
           >
             <FaYoutube className="w-10 h-10" />
             <span className="sr-only">YouTube Channel</span>
-          </a>
+          </a> */}
           <a
             target="_blank"
             rel="noopener noreferrer"
