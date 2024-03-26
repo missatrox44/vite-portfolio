@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 import jobExperiences from "../constants/jobExperiences.json";
 import nonDevExperiences from "../constants/nonDevExperience.json";
 
-const JobExperienceCard = ({ experience }) => (
+const JobExperienceCard = ({ experience, onClick }) => (
   <VerticalTimelineElement
     icon={
       <img
@@ -28,7 +28,15 @@ const JobExperienceCard = ({ experience }) => (
     /> */}
     <h3 className="text-2xl font-bold text-darkDesert">{experience.title}</h3>
     <p className="text-xl text-darkDesert italic mb-4">{experience.company}</p>
-    <p className="text-darkDesert">{experience.description}</p>
+    {/* <p className="text-darkDesert">{experience.description}</p> */}
+    <div className="flex justify-between items-center">
+      <button
+        className="text-darkDesert font-bold hover:text-goldDesert"
+        onClick={onClick}
+      >
+        Read more...
+      </button>
+    </div>
   </VerticalTimelineElement>
 );
 
@@ -80,11 +88,15 @@ const Experience = () => {
       className="bg-lightDesert p-8 rounded-lg shadow-lg w-full mx-auto mt-12"
     >
       <h2 className="text-4xl font-bold text-darkDesert mb-4 text-center">
-        Experience
+       Developer Experience
       </h2>
       <VerticalTimeline>
         {jobExperiences.map((experience, index) => (
-          <JobExperienceCard key={index} experience={experience} />
+          <JobExperienceCard 
+          key={index} 
+          experience={experience}  
+          onClick={() => setModalContent(experience)}
+          />
         ))}
       </VerticalTimeline>
 
