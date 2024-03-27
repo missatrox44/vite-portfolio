@@ -41,7 +41,7 @@ const About = () => {
     <animated.div
       style={fadeIn}
       id="about"
-      className="container mx-auto flex flex-col items-center bg-lightDesert p-8 mt-12"
+      className="container mx-auto flex flex-col items-center justify-center bg-lightDesert min-h-screen"
     >
       <animated.img
         style={{ ...springProps }}
