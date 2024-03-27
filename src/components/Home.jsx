@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="bg-lightDesert flex flex-col items-center justify-center min-h-screen"
+      className="container mx-auto bg-lightDesert flex flex-col items-center justify-center min-h-screen"
     >
       <animated.img
         style={logoSpring}
