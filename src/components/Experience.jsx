@@ -116,10 +116,10 @@ const Experience = () => {
       <Modal
         isOpen={!!modalContent}
         onRequestClose={() => setModalContent(null)}
-        className="fixed inset-0 z-50 flex items-center justify-center p-6"
+        className="fixed inset-0 z-50 flex items-center justify-center p-6 "
         overlayClassName="bg-black bg-opacity-50 transition-opacity duration-500 ease-out"
       >
-        <div className="bg-white p-6 rounded-lg shadow-2xl transform transition-transform duration-500 ease-out space-y-4 md:space-y-0 max-w-md">
+        <div className="bg-white p-6 rounded-lg shadow-2xl transform transition-transform duration-500 ease-out space-y-4 md:space-y-0 max-w-md max-h-[80vh] overflow-y-auto">
           <button
             onClick={() => setModalContent(null)}
             className="absolute top-2 right-2 text-darkDesert hover:text-goldDesert"
