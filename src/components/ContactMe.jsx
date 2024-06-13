@@ -1,6 +1,8 @@
 import React, { useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 import { useSpring, animated } from "react-spring";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 // fetch environment variables outside the component or can use useEffect to avoid unnecessary computation during re-rendering
 const serviceId = import.meta.env.VITE_SERVICE;
@@ -58,12 +60,14 @@ export default function ContactMe() {
         setName("");
         setEmail("");
         setMessage("");
+        toast.success("Your message has been sent successfully!");
       },
       (error) => {
         console.log("error", error.text);
         setError(
           "Oops! It seems the JavaScript deities are having a moody day. Fear not, our digital shaman Sara is on it! If you need to bypass the spiritual realm and chat directly, email her at missatrox44@gmail.com"
         );
+        toast.error("Oops! Something went wrong. Please try again later.");
       }
     );
   };
@@ -80,7 +84,7 @@ export default function ContactMe() {
         </h1>
         {success ? (
           <div>
-            <img src="/toast.png" alt="Success" />
+            <img src="/thankyou-toast.jpg" alt="Success" class="rounded-3xl" />
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
