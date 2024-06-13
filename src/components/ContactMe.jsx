@@ -84,7 +84,7 @@ export default function ContactMe() {
         </h1>
         {success ? (
           <div>
-            <img src="/toast.png" alt="Success" />
+            <img src="/thankyou-toast.jpg" alt="Success" class="rounded-3xl" />
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
