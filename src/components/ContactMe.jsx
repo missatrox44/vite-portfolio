@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 import { useSpring, animated } from "react-spring";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 // fetch environment variables outside the component or can use useEffect to avoid unnecessary computation during re-rendering
@@ -78,7 +78,6 @@ export default function ContactMe() {
       className="flex flex-col items-center justify-center bg-lightDesert p-8 rounded-lg shadow-md min-h-screen"
       style={contactSpring}
     >
-       <ToastContainer />
       <div className="w-full max-w-md">
         <h1 className="text-4xl font-bold text-darkDesert mb-6 text-center">
           Contact Me
