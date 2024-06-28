@@ -1,10 +1,12 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiPerplexity } from "react-icons/si";
 import {
   GITHUB_URL,
   LINKEDIN_URL,
   PERSONAL_WEBSITE_URL,
   CURRENT_YEAR,
+  PERPLEXITY_URL,
 } from "../constants/index";
 
 export default function Footer() {
@@ -40,6 +42,15 @@ export default function Footer() {
           >
             <FaLinkedin className="w-5 h-5" />
             <span className="sr-only">LinkedIn account</span>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={PERPLEXITY_URL}
+            className="text-lightDesert hover:text-goldDesert transition-colors duration-300"
+          >
+            <SiPerplexity className="w-5 h-5" />
+            <span className="sr-only">Perplexity Referral</span>
           </a>
         </div>
       </div>

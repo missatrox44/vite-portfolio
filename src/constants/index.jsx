@@ -5,3 +5,4 @@ export const CURRENT_YEAR = new Date().getFullYear().toString();
 export const YOUTUBE_URL = "https://www.youtube.com/playlist?list=PLwgb5FGvcCf69CJDSQYxXI-T_DAbG4b41";
 export const RESUME_URL = "baqla_resume.pdf";
 export const BLOG_URL = "https://ibginstitute.com/blog/";
+export const PERPLEXITY_URL ="https://perplexity.ai/pro?referral_code=ATCI7KON";
