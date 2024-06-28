@@ -1,7 +1,8 @@
 import React, { memo, useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { GITHUB_URL, LINKEDIN_URL } from "../constants/index";
+import { GITHUB_URL, LINKEDIN_URL, PERPLEXITY_URL } from "../constants/index";
 import { useSpring, animated, config } from "react-spring";
+import { SiPerplexity } from "react-icons/si";
 
 const Anchor = ({ href, children }) => (
   <a
@@ -47,30 +48,21 @@ const About = () => {
         style={{ ...springProps }}
         src="images/profile.jpg"
         alt="Sara"
-        className="rounded-full w-64 h-64 border-4 border-darkDesert object-cover mb-8 "
+        className="rounded-full w-64 h-64 border-4 border-darkDesert object-cover mb-8 mt-20"
         onMouseEnter={() => setScale(1.1)}
         onMouseLeave={() => setScale(1)}
       />
       <animated.div style={slideUp}>
-        <h1 className="text-4xl font-bold text-darkDesert mb-4 text-center">
+        <h1 className="text-4xl font-bold text-darkDesert mb-4 text-center px-8">
           Sara Baqla
         </h1>
-        <p className="text-lg text-darkDesert mb-4 text-center">
-          As a science-loving, code-wielding full-stack web dev, I whip up
-          user-friendly apps with serious impact. My systematic problem-solving
-          skills were fine-tuned at UT Austin's web dev boot camp. I may not
-          have all the answers upfront, but my resourcefulness and eye for
-          detail guarantee top-notch results. Joining a creative crew to craft
-          sustainable web apps sounds like a dream!
+        <p className="text-lg text-darkDesert mb-4 text-center px-8">
+          As a science-loving, code-wielding full-stack web developer, I create user-friendly apps with serious impact. My systematic problem-solving skills were fine-tuned at UT Austin's web development boot camp. I'm resourceful and always staying up to date with the latest trends.
         </p>
-        <p className="text-lg text-darkDesert mb-4 text-center">
-          But wait, there's more! I'm not just a coding maestro; I'm also a
-          trumpet virtuoso. For two decades, I've been blowing minds with my
-          music, channeling the legends like Miles Davis and Dizzy Gillespie. I
-          even share my wisdom as a trumpet tutor, shaping the next generation
-          of brass warriors.
+        <p className="text-lg text-darkDesert mb-4 text-center px-8">
+          But wait, there's more! I'm not just a coding maestro; I also play the trumpet! For two decades, I've performed with various groups across multiple genres, putting a smile on people's faces and a beat in their feet. Some of my heroes? Freddie Hubbard, Clifford Brown, Miles Davis, and Dizzy Gillespie. I've even shared my wisdom as a trumpet tutor, shaping the next generation of brass warriors.
         </p>
-        <p className="text-lg text-darkDesert mb-4 text-center">
+        <p className="text-lg text-darkDesert mb-4 text-center px-8">
           When I'm not jamming or coding, I'm an outdoor enthusiast and bookworm
           extraordinaire. From hanging out in trees to diving into captivating
           reads, I seize every moment. My most epic adventures?{" "}
@@ -103,17 +95,21 @@ const About = () => {
           --pure bliss!
         </p>
 
-        <p className="text-lg text-darkDesert mb-4 text-center">
-          Let's make waves in the digital realm while grooving to life's sweet
-          melodies.
+        <p className="text-lg text-darkDesert mb-4 text-center px-8">
+          Let's collab!
         </p>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center pb-8">
           <Anchor href={GITHUB_URL}>
             <FaGithub size={32} />
           </Anchor>
           <Anchor href={LINKEDIN_URL}>
             <FaLinkedin size={32} />
           </Anchor>
+          <Anchor href={PERPLEXITY_URL}>
+            <SiPerplexity size={32} />
+          </Anchor>
+        </div>
+        <div>
         </div>
       </animated.div>
     </animated.div>

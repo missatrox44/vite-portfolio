@@ -7,6 +7,7 @@ import {
   FaFileAlt,
   FaBlog,
 } from "react-icons/fa";
+import { SiPerplexity } from "react-icons/si";
 import landingImg from "/logo.svg";
 import {
   GITHUB_URL,
@@ -14,6 +15,7 @@ import {
   YOUTUBE_URL,
   RESUME_URL,
   BLOG_URL,
+  PERPLEXITY_URL,
 } from "../constants";
 
 export default function Home() {
@@ -41,7 +43,7 @@ export default function Home() {
         alt="Trumpet with tentacle logo"
       />
 
-      <animated.div style={iconSpring} className="flex mt-2 space-x-6">
+      <animated.div style={iconSpring} className="flex flex-col mt-2 space-x-6">
         <div className="flex mt-2 space-x-6">
           <a
             target="_blank"
@@ -60,6 +62,15 @@ export default function Home() {
           >
             <FaLinkedin className="w-10 h-10" />
             <span className="sr-only">LinkedIn account</span>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={PERPLEXITY_URL}
+            className="text-darkDesert hover:text-goldDesert transition-colors duration-300"
+          >
+            <SiPerplexity className="w-10 h-10" />
+            <span className="sr-only">Resume</span>
           </a>
           {/* <a
             target="_blank"
@@ -88,6 +99,13 @@ export default function Home() {
             <FaBlog className="w-10 h-10" />
             <span className="sr-only">Blog</span>
           </a> */}
+        </div>
+        <div class="pt-6">
+          <a href={PERPLEXITY_URL}
+            class="inline-block px-4 py-2 bg-tealDesert text-white rounded-full text-sm font-semibold hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
+            Get $10 off Perplexity
+          </a>
+
         </div>
       </animated.div>
     </div>

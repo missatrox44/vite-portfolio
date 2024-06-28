@@ -106,6 +106,8 @@ export default function Projects() {
     config: { tension: 150, friction: 20 },
   });
 
+  const reversedProjects = [...projects].reverse();
+
   return (
     <div
       id="projects"
@@ -114,10 +116,10 @@ export default function Projects() {
       <h2 className="text-4xl font-bold text-darkDesert mb-4">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {trails.map((props, index) => (
-          <animated.div key={projects[index].id} style={props}>
+          <animated.div key={reversedProjects[index].id} style={props}>
             <ProjectCard
-              project={projects[index]}
-              openModal={() => openModal(projects[index])}
+              project={reversedProjects[index]}
+              openModal={() => openModal(reversedProjects[index])}
             />
           </animated.div>
         ))}
