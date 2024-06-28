@@ -7,6 +7,7 @@ import {
   FaFileAlt,
   FaBlog,
 } from "react-icons/fa";
+import { SiPerplexity } from "react-icons/si";
 import landingImg from "/logo.svg";
 import {
   GITHUB_URL,
@@ -14,6 +15,7 @@ import {
   YOUTUBE_URL,
   RESUME_URL,
   BLOG_URL,
+  PERPLEXITY_URL,
 } from "../constants";
 
 export default function Home() {
@@ -60,6 +62,15 @@ export default function Home() {
           >
             <FaLinkedin className="w-10 h-10" />
             <span className="sr-only">LinkedIn account</span>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={PERPLEXITY_URL}
+            className="text-darkDesert hover:text-goldDesert transition-colors duration-300"
+          >
+            <SiPerplexity className="w-10 h-10" />
+            <span className="sr-only">Resume</span>
           </a>
           {/* <a
             target="_blank"
