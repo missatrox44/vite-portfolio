@@ -109,6 +109,8 @@ const About = () => {
             <SiPerplexity size={32} />
           </Anchor>
         </div>
+        <div>
+        </div>
       </animated.div>
     </animated.div>
   );
