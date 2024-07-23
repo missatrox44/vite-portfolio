@@ -105,9 +105,9 @@ const About = () => {
           <Anchor href={LINKEDIN_URL}>
             <FaLinkedin size={32} />
           </Anchor>
-          <Anchor href={PERPLEXITY_URL}>
+          {/* <Anchor href={PERPLEXITY_URL}>
             <SiPerplexity size={32} />
-          </Anchor>
+          </Anchor> */}
         </div>
         <div>
         </div>
