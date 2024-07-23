@@ -63,7 +63,7 @@ export default function Home() {
             <FaLinkedin className="w-10 h-10" />
             <span className="sr-only">LinkedIn account</span>
           </a>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href={PERPLEXITY_URL}
@@ -71,7 +71,7 @@ export default function Home() {
           >
             <SiPerplexity className="w-10 h-10" />
             <span className="sr-only">Resume</span>
-          </a>
+          </a> */}
           {/* <a
             target="_blank"
             rel="noopener noreferrer"
@@ -100,13 +100,13 @@ export default function Home() {
             <span className="sr-only">Blog</span>
           </a> */}
         </div>
-        <div class="pt-6">
+        {/* <div class="pt-6">
           <a href={PERPLEXITY_URL}
             class="inline-block px-4 py-2 bg-tealDesert text-white rounded-full text-sm font-semibold hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
             Get $10 off Perplexity
           </a>
 
-        </div>
+        </div> */}
       </animated.div>
     </div>
   );

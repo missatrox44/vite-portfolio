@@ -43,7 +43,7 @@ export default function Footer() {
             <FaLinkedin className="w-5 h-5" />
             <span className="sr-only">LinkedIn account</span>
           </a>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href={PERPLEXITY_URL}
@@ -51,7 +51,7 @@ export default function Footer() {
           >
             <SiPerplexity className="w-5 h-5" />
             <span className="sr-only">Perplexity Referral</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>
