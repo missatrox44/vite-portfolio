@@ -107,3 +107,25 @@ post: {
   }
 }
 ```
+
+## Proposed SiteMap
+1. Home
+- Hero section
+- Quick pitch
+- Featured project cards
+- Social links
+
+2. About + Experience
+- Personal story
+- Professional journey
+- Education
+- Skills & expertise
+- Downloadable resume
+- Full contact section
+
+3. Projects + Case Studies
+- Detailed portfolio
+- Process documentation
+- Technical details
+
+4. Blog

@@ -4,7 +4,7 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# Landing Page
+const content = `# Projects Page
 
 Coming Soon`;
 
