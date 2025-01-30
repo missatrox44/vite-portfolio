@@ -13,7 +13,7 @@ import {
   ContactMe,
   Footer,
   NotFound,
-} from '../src/components/index';
+} from './components/index';
 
 import './index.css';
 import './App.css';
