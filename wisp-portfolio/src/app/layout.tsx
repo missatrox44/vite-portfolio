@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -45,7 +47,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main>{children}</main>
+          <main className="container mx-auto px-6">
+            <Header />
+            {children}
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>
