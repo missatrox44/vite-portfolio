@@ -5,6 +5,9 @@ import Link from "next/link";
 import { FunctionComponent } from "react";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { Button } from "./ui/button";
+import { Github, Linkedin } from "lucide-react";
+import { GITHUB_URL, LINKEDIN_URL } from "@/constants";
+
 
 export const Footer: FunctionComponent = () => {
   return (
@@ -22,11 +25,21 @@ export const Footer: FunctionComponent = () => {
         </div>
         <div>
           <Link href="/rss">
-            <Button variant="ghost" className="p-2">
+            <Button variant="ghost">
               <Rss className="w-4 h-4" />
             </Button>
           </Link>
           <DarkModeToggle />
+          <Link href={GITHUB_URL} target="_blank" rel="noreferrer">
+            <Button variant="ghost">
+              <Github className="w-4 h-4" />
+            </Button>
+          </Link>
+            <Link href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+            <Button variant="ghost">
+              <Linkedin className="w-4 h-4" />
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="text-xs text-muted-foreground lg:hidden">
