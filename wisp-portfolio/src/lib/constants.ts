@@ -1,4 +1,63 @@
-[
+export const GITHUB_URL = "https://github.com/missatrox44";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/sara-baqla/";
+export const PERSONAL_WEBSITE_URL = "https://www.sarabaqla.dev/";
+export const CURRENT_YEAR = new Date().getFullYear().toString();
+export const YOUTUBE_URL = "https://www.youtube.com/playlist?list=PLwgb5FGvcCf69CJDSQYxXI-T_DAbG4b41";
+export const RESUME_URL = "baqla_resume.pdf";
+export const BLOG_URL = "https://ibginstitute.com/blog/";
+export const PERPLEXITY_URL ="https://perplexity.ai/pro?referral_code=ATCI7KON";
+
+
+export const devJobs = [
+  {
+    "id": "0",
+    "title": "Full Stack Developer",
+    "company": "Reach Creative",
+    "description": "In my current position, I specialize in the development of components and pages for cutting-edge Next.js web applications. I leverage sophisticated CMS platforms, including Prismic and Sanity, to elevate web development projects, ensuring they are both dynamic and content-rich. My role involves close collaboration with design teams, focusing on the seamless integration of visual concepts with web functionalities. This synergy between design and development guarantees that the final products not only meet but exceed user expectations, providing an intuitive and engaging user experience.",
+    "timePeriod": "January 2024 - Present",
+    "img": "images/reach.jpg"
+  },
+  {
+    "id": "1",
+    "title": "Junior Software Developer",
+    "company": "IBG Software",
+    "description": "At IBG Software, I led full-stack development in an Agile environment, focusing on React and React Native applications powered by TypeScript, Node.js, and Express.js. My work significantly enhanced project efficiency and execution. My strategic use of MongoDB and Firebase Firestore boosted backend performance. I redefined user experiences by integrating Firebase Authentication with Redux Saga, improving both security and usability. Through Cypress, I implemented end-to-end testing protocols, ensuring software quality. I developed scalable RESTful APIs to improve system performance and meticulously documented processes on Confluence, enhancing team collaboration. Engaging with stakeholders, I aligned products with business objectives, increasing satisfaction. My management of project tasks via Jira facilitated collaboration and ensured the timely completion of milestones.",
+    "timePeriod": "November 2022 - January 2024",
+    "img": "images/ibg.png"
+  },
+  {
+    "id": "2",
+    "title": "Software Developer",
+    "company": "Chingu",
+    "description": "During Chingu's Voyage 41, our team developed an accessible travel planning app focused on accessibility. In a separate week-long sprint, my partner and I built a Pomodoro Clock application, enhancing collaboration, time management, and React skills through Agile methods.",
+    "timePeriod": "October 2022 - November 2022 & March 2023",
+    "img": "images/chingu.png"
+  }
+];
+
+export const education = [{
+  "id": 1,
+  "degree": "Web Development Certificate",
+  "university": "The University of Texas at Austin",
+  "timePeriod": "June 2022 - September 2022",
+  "img": "images/longhorns.jpg"
+},
+{
+  "id": 2,
+  "degree": "M.S. Biological Sciences",
+  "university": "The University of Texas at El Paso",
+  "timePeriod": "August 2014 - May 2017",
+  "img": "images/pick.png"
+},
+{
+  "id": 3,
+  "degree": "B.S. Ecology & Evolutionary Biology",
+  "university": "The University of Texas at El Paso",
+  "timePeriod": "August 2009 - May 2014",
+  "img": "images/pick.png"
+}]
+
+export const projects =[
   {
     "id": "1",
     "title": "Git Me There",
@@ -87,5 +146,56 @@
     "github": "https://github.com/missatrox44/nextjs-events",
     "deployed": "https://seb-events.vercel.app/",
     "date": "October 2023"
+  }
+]
+
+export const nonDevJobs = [
+  {
+    "id": "1",
+    "title": "Robotics Teacher",
+    "company": "ECISD",
+    "description": "I taught six sections of robotics to 7th and 8th-grade students. The curriculum included basic computer science and robotics concepts, using lessons from Code.org and LEGO Education. I engaged students in daily hands-on learning by implementing the engineering/problem-solving process. My experience with robots and circuit boards includes Ozobots, BBC micro:bit, and the Spike Prime LEGO set.",
+    "timePeriod": "August 2021 - July 2022",
+    "img": "images/ecisd.png"
+  },
+  {
+    "id": "2",
+    "title": "Elementary Music Specialist",
+    "company": "ECISD",
+    "description": "I facilitated weekly general music instruction for students from Pre-Kindergarten through to 5th grade. I also pioneered an after-school guitar club and piano club, which were offered to 4th and 5th-grade students. Additionally, I served as an Innovation Campus Ambassador.",
+    "timePeriod": "August 2019 - July 2021",
+    "img": "images/ecisd.png"
+  },
+  {
+    "id": "3",
+    "title": "AIM Technician",
+    "company": "Southwest Conservation Corps",
+    "description": "As a Stream Habitat Assessment Technician, in partnership with the Bureau of Land Management (BLM), I assisted with the implementation of the aquatic Assessment, Inventory, Monitoring (AIM) initiative. I sampled twelve random streams and rivers throughout New Mexico, all located on BLM land. The data collected included water sampling, invasive and native plant species identification, EPT taxa sampling, and measurement of various metrics related to the bodies of water.",
+    "timePeriod": "April 2018 - October 2018",
+    "img": "images/scc.png"
+  },
+  {
+    "id": "4",
+    "title": "Trail Worker",
+    "company": "California Conservation Corps",
+    "description": "Selected for the 2017 season in the Backcountry Trails Program, I maintained trails in the Trinity Alps Wilderness to ensure safe public access. Projects undertaken included the construction of rock walls, water bars, steps, logging, and treading new trails. The tools I used in these tasks included a Pulaski, crosscut saw, loppers, rogue hoes, McLeod, and shovel. Additionally, I performed Kitchen Patrol (KP) duties on a rotational basis, which involved preparing food for a crew of 17 members.",
+    "timePeriod": "May 2017 - September 2017",
+    "img": "images/ccc.png"
+  },
+  {
+    "id": "5",
+    "title": "Teaching Assistant",
+    "company": "The University of Texas at El Paso",
+    "description": "I taught labs, including Ecology, Organismal Biology, Invertebrate Zoology, General Biology, and Field Biology. My responsibilities included preparing lessons, setting up labs, creating quizzes, grading all assignments, and arranging overnight field trips. Additionally, I worked closely with tenured professors to ensure accurate delivery of the curriculum.",
+    "timePeriod": "Fall 2014 - Spring 2017",
+    "img": "images/utep.png"
+  },
+  {
+    "id": "6",
+    "title": "Graduate Field Researcher",
+    "company": "The University of Texas at El Paso",
+    "description": "I collected grasshopper specimens bi-monthly at specified locations on IMRS. I also conducted plant surveys using modified quadrats and the belt transect method. Additionally, I assisted colleagues in processing, marking, and recapturing both venomous and non-venomous snakes, as well as a variety of lizards.",
+    "timePeriod": "Fall 2014 - Spring 2017",
+    "img": "images/utep.png"
   }
 ]

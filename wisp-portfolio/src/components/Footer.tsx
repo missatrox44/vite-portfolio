@@ -6,7 +6,7 @@ import { FunctionComponent } from "react";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { Button } from "./ui/button";
 import { Github, Linkedin } from "lucide-react";
-import { GITHUB_URL, LINKEDIN_URL } from "@/constants";
+import { GITHUB_URL, LINKEDIN_URL } from "@/lib/constants";
 
 
 export const Footer: FunctionComponent = () => {
